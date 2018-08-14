@@ -12,9 +12,20 @@
 			+fz(1.3rem)
 			text-transform: uppercase
 		.inf
+			background: color-rgba(color-get($mau, main), .1)
 			+pad(2rem)
-			h2
-				+fz(1.3rem)
+			figcaption
+				padding-top: 30px
+				p
+					color: color-get($mau, den)
+					+fz(18px)
+					text-transform: uppercase
+	.validator
+		label
+			display: none
+		input, textarea
+			border: 1px solid color-rgba(color-get($mau, den),.25)
+			+fz(16px)
 	form
 		.help-block
 			ul

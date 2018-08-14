@@ -5,7 +5,7 @@
                 "header/h-1"
             ],
             "body": [
-
+                "pagination/p-1"
             ],
             "footer": [
                 "footer/f-3"
@@ -23,7 +23,8 @@
         },
         "contact": {
             "body": [
-                "form/f-1"
+                "form/f-1",
+                "map/m-1"
             ]
         },
         "gallery": {
@@ -43,7 +44,8 @@
         },
         "news-detail": {
             "body": [
-                "nav/n-2"
+                "nav/n-2",
+                "news-details/n-1"
             ]
         }
     }

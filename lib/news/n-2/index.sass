@@ -12,7 +12,7 @@
 			position: relative
 			margin-bottom: 2rem
 			overflow: hidden
-			+bor-rad(5px)
+			
 			img
 				width: 100%
 			.item
@@ -29,8 +29,8 @@
 				flex-direction: column
 				justify-content: flex-end
 				h3
-					+fz(1.2rem)
-					+fw(300)
+					+fz(1.5rem)
+					+fw(400)
 				time
 					+fz(.9rem)
 					+fw(200)
@@ -39,14 +39,14 @@
 					content: ''
 					+pos(abs, null 0 0 null)
 					width: 100%
-					height: 50%
+					height: 70%
 					z-index: -1
-					+transition(ease-in-out all .15s)
+					+transition(ease-in-out all .25s)
 					+opacity(0)
-					background: rgba(0,0,0,.5)
-					background: -moz-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,0.65) 100%)
-					background: -webkit-linear-gradient(top, rgba(0,0,0,0) 50%,rgba(0,0,0,0.65) 100%)
-					background: linear-gradient(to bottom, rgba(0,0,0,0) 50%,rgba(0,0,0,0.65) 100%)
+					background: rgba(0,0,0,.8)
+					background: -moz-linear-gradient(top, rgba(0,0,0,0) 350%, rgba(0,0,0,0.85) 100%)
+					background: -webkit-linear-gradient(top, rgba(0,0,0,0) 35%,rgba(0,0,0,0.85) 100%)
+					background: linear-gradient(to bottom, rgba(0,0,0,0) 35%,rgba(0,0,0,0.85) 100%)
 					filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000',GradientType=0)
 			&:hover
 				figcaption
@@ -65,9 +65,9 @@
 					figcaption
 						+pad(.5rem 1rem)
 						h3
-							+fz(1rem)
+							+fz(1.3rem)
 						time
-							+fz(.8rem)
+							+fz(.9rem)
 	.news-list
 		.btn-group
 			i
@@ -87,7 +87,7 @@
 						img
 							max-width: 30%
 							float: left
-							+bor-rad(5px 0 0 5px)
+							
 						figcaption
 							max-width: 70%
 							float: left
@@ -97,16 +97,16 @@
 			display: flex
 			text-decoration: none
 			height: 100%
-			+bor-rad(5px)
+			
 			overflow: hidden
 			figure
 				position: relative
 				overflow: hidden
-				+bor-rad(5px)
+				
 				margin-bottom: 2rem
 				background: darken(color-get($mau,trang) ,3%)
 				img
-					+bor-rad(5px 5px 0 0)
+					
 				figcaption
 					padding: 1rem
 
