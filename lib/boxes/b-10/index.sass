@@ -9,7 +9,7 @@
 		+pad(4rem 0)
 	h1 
 		color: lighten(color-get($mau,main),0%)
-		font-weight: 600 
+		font-weight: 400 
 		font-size: 2.2rem
 		position: relative
 		margin-bottom: 2rem
@@ -20,14 +20,16 @@
 			height: 2px
 			background: lighten(color-get($mau,extra),0%)
 			+pos(abs, calc(100% + 10px) null null 0)
-	h2, h3, h5, h6
+	h2, h5, h6
 		color: lighten(color-get($mau,main),0%)
 		font-weight: 400
 		+fz(1.75rem)
 	h4
 		color: lighten(color-get($mau,main),0%)
 		font-weight: 400
-		+fz(1.6rem)
+		+fz(1.5rem)
+	h3
+		+fz(1.75rem)
 	time 
 		color: darken(color-get($mau,trang),40%)
 		margin-bottom: .5rem
@@ -53,8 +55,8 @@
 			li
 				list-style-type: none
 				+lh(30px)
-				+fw(300)
-				+fz(16px)
+				+fw(400)
+				+fz(1.1rem)
 				&:before
 					display: inline-block
 					content: ''
@@ -65,8 +67,16 @@
 					margin-right: 12px
 		p
 			+lh(30px)
-			+fw(300)
-			+fz(16px)
+			+fw(400)
+			+fz(1.1rem)
+			&:before
+				display: inline-block
+				content: ''
+				width: 8px
+				height: 8px
+				background: #c5c5c5
+				border-radius: 50%
+				margin-right: 12px
 	.other
 		margin-top: 40px
 		+media-breakpoint-up(lg)
