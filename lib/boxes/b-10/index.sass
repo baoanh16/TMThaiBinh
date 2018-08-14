@@ -10,19 +10,24 @@
 	h1 
 		color: lighten(color-get($mau,main),0%)
 		font-weight: 600 
-		font-size: 1.5rem
+		font-size: 2.2rem
 		position: relative
 		margin-bottom: 2rem
 		&:before
+			content: ''
 			display: block
 			width: 60px
 			height: 2px
 			background: lighten(color-get($mau,extra),0%)
-			content: ''
 			+pos(abs, calc(100% + 10px) null null 0)
-	h2, h3, h4, h5, h6
+	h2, h3, h5, h6
 		color: lighten(color-get($mau,main),0%)
-		font-weight: 400 
+		font-weight: 400
+		+fz(1.75rem)
+	h4
+		color: lighten(color-get($mau,main),0%)
+		font-weight: 400
+		+fz(1.6rem)
 	time 
 		color: darken(color-get($mau,trang),40%)
 		margin-bottom: .5rem
@@ -32,9 +37,41 @@
 	.item 
 		a
 			color: darken(color-get($mau,trang),70%)
+			text-decoration: none
+			+fz(15px)
 	.download 
 		background: lighten(color-get($mau,main),0%)
 		color: color-get($mau,trang)
 		+bor-rad(0)
 		i 
 			margin-right: .5rem
+	.text
+		ul
+			width: 100%
+			padding-left: 0
+			margin-bottom: 30px
+			li
+				list-style-type: none
+				+lh(30px)
+				+fw(300)
+				+fz(16px)
+				&:before
+					display: inline-block
+					content: ''
+					width: 8px
+					height: 8px
+					background: #c5c5c5
+					border-radius: 50%
+					margin-right: 12px
+		p
+			+lh(30px)
+			+fw(300)
+			+fz(16px)
+	.other
+		margin-top: 40px
+		+media-breakpoint-up(lg)
+			margin-top: 0
+		.other-text
+			background: color-get($mau,xam-4)
+			+pad(30px)
+
