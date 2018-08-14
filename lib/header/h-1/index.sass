@@ -1,0 +1,161 @@
+@import ../../_includes
+
+
++media-breakpoint-down(md)
+	header
+		background: white
+		display: flex
+		align-items: center
+		+pad(10px 0)
+		height: 70px
+		.container
+			max-width: 100%
+			>.row
+				.logo
+					max-width: 150px
+				.menu-wrap
+					+pad(15px)
+					position: fixed
+					top: 70px
+					background: color-get($mau, main)
+					width: 100%
+					left: 0
+					display: flex
+					flex-direction: column
+					.bottom
+						order: 1
+						flex-direction: column
+						.search
+							order: 1
+							.toggle-menu
+								display: none
+						.menu
+							order: 2
+							.nav
+								flex-direction: column
+								li
+									a
+										display: block
+										+fz(18px)
+										+pad(.5rem 0)
+										color: white
+										text-transform: uppercase
+					.top
+						order: 2
+						flex-direction: column
+						div
+							a
+								color: white
+								+pad(.5rem 0)
+								+fz(18px)
+							p
+								margin-bottom: 0
+								color: grey
+						.hotline
+							a
+								color: color-get($mau, trang)
+						.language
+							select
+								font-size: 20px
+								border: none
+								color: color-get($mau, main)
+				.toggle-menu
+					display: flex
+					align-items: center
+					margin-left: auto
+					span
+						+fz(20px)
+						width: 30px
+						line-height: 30px
+						display: flex
+						justify-content: center
+						background: color-get($mau, main)
+						color: white
++media-breakpoint-up(lg)
+	header
+		.container
+			>.row
+				+pad(8px 0)
+				.logo
+					max-width: 190px
+					img
+						width: 100%
+				.menu-wrap
+					.row
+						justify-content: flex-end
+					.top
+						p
+							+mar(0)
+						div
+							padding-left: 44px
+							vertical-align: middle
+							display: flex
+							align-items: center
+							+ div
+								position: relative
+								&:after
+									content: ''
+									+pos(abs,50% null null 22px)
+									height: 16px
+									width: 1px
+									background: color-get($mau, front)
+									transform: translateY(-50%)
+						.hotline, .maintenance
+							a
+								color: color-get($mau, main)
+						.hotline
+							+fz(18px)
+							.mdi
+								margin-right: .5rem
+						.maintenance
+							p
+								color: color-get($mau, xam-1)
+								+fz(16px)
+						.social
+							li
+								+ li
+									padding-left: 20px
+						.social, .unknown, .language
+							a, option, select
+								color: color-get($mau, xam-1)
+						.language
+							select
+								border: none
+								outline: none
+								padding-right: 15px
+								+fz(16px)
+								background-image: url('../img/lang-bg.png')
+								-webkit-appearance: none
+								background-size: 100%
+								background-position: center
+								background-repeat-y: no-repeat
+					.bottom
+						margin-top: 16px
+						.menu
+							display: flex
+							align-items: center
+							.nav
+								li
+									+ li
+										margin-left: 20px
+										+media-breakpoint-up(xl)
+											margin-left: 35px
+									a
+										color: black
+										text-transform: uppercase
+										+fz(16px)
+										text-decoration: none
+										+media-breakpoint-up(xl)
+											+fz(18px)
+						.search
+							.toggle-menu
+								margin-left: 20px
+								width: 30px
+								height: 30px
+								background: color-get($mau, main)
+								display: flex
+								justify-content: center
+								align-items: center
+								color: white
+							.searchbox
+								display: none

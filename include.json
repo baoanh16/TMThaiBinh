@@ -1,0 +1,50 @@
+{
+    "SETUP": {
+        "index": {
+            "header": [
+                "header/h-1"
+            ],
+            "body": [
+
+            ],
+            "footer": [
+                "footer/f-3"
+            ]
+        },
+        "job": {
+            "body": [
+                "boxes/b-11"
+            ]
+        },
+        "job-detail": {
+            "body": [
+                "boxes/b-10"
+            ]
+        },
+        "contact": {
+            "body": [
+                "form/f-1"
+            ]
+        },
+        "gallery": {
+            "body": [
+                "gallery/g-3"
+            ]
+        },
+        "video": {
+            "body": [
+                "gallery/g-2"
+            ]
+        },
+        "news": {
+            "body": [
+                "news/n-2"
+            ]
+        },
+        "news-detail": {
+            "body": [
+                "nav/n-2"
+            ]
+        }
+    }
+}

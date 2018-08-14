@@ -1,0 +1,108 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-footer-3
+	background-color: color-get($mau,den-3)
+	position: relative
+	z-index: 1
+	color: darken(color-get($mau,trang) ,50%)
+	overflow: hidden
+	+media-breakpoint-down(xs)
+		text-align: center
+	h4
+		text-transform: uppercase
+		color: color-get($mau,xam-1)
+		position: relative
+		+fz(sz(18px))
+		margin-bottom: 16px
+		vertical-align: bottom
+	.linkfooter
+		+pad(50px 0 60px 0)
+		.list-group
+			.list-group-item
+				display: inline-block
+				+bg(none, none, none)
+				border: 0
+				+pad(0)
+				// +pad(.5rem 0)
+				// +media-breakpoint-up(md)
+				// 	+pad(.15rem 0)
+				a
+					text-transform: uppercase
+					+fz(14px)
+					+lh(25px)
+					color: color-get($mau, trang)
+					&:before
+						content: '>'
+						margin-right: 12px
+						+fw(600)
+						display: inline-block
+		.address
+			p
+				+fz(14px)
+				color: color-get($mau, trang)
+				text-transform: uppercase
+				+ p
+					margin-bottom: 0
+			.list-group-item
+				margin-right: -15px
+		.subscribe
+			h4
+				text-transform: none
+				color: white
+				+fz(13px)
+			.input-group
+				width: 100%
+				input
+					width: 100%
+					+bor-rad(0)
+					border: none
+					background: color-rgba(color-get($mau, xam-3), .2)
+				button
+					margin: auto
+					margin-top: 15px
+					+bor-rad(0)
+					display: block
+					width: 110px
+					height: 32px
+					border: 1px solid color-rgba(color-get($mau, xam-3), .2)
+					background: none
+					color: color-get($mau, xam-1)
+					text-transform: uppercase
+					+fz(16px)
+					+media-breakpoint-up(lg)
+						margin: initial
+						margin-top: 15px
+		// .socials
+		// 	.social-list
+		// 		+media-breakpoint-down(sm)
+		// 			+mar(2rem null null null)
+		// 		.list-inline
+		// 			+mar(0)
+		// 			.list-inline-item
+		// 				+fz(.9rem)
+		// 				+link(darken(color-get($mau,trang), 85%), color-get($mau,trang), color-get($mau,trang))
+		// 				+mar(null 1rem null null)
+		// 				a
+		// 					display: block
+		// 					height: 2rem
+		// 					width: 2rem
+		// 					+lh(2rem)
+		// 					+bg(darken(color-get($mau,trang),40%), color-get($mau,main), color-get($mau,main))
+		// 					+link(darken(color-get($mau,trang),85%), darken(color-get($mau,trang),0%))
+		// 					+border-radius(50%)
+		// 					text-align: center
+		// 					i
+		// 						+lh(2rem)
+		// 				&:last-child
+		// 					+mar(0)
+	.copyright
+		background: none
+		.text-center
+			+fz(13px)
+			color: color-get($mau, xam-1)
+			text-transform: uppercase
+			+pad(17px)
+			border-top: 1px solid color-get($mau, xam-2)
