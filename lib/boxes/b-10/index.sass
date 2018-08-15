@@ -55,38 +55,6 @@
 		display: block
 		i 
 			margin-right: .25rem 
-	.download 
-		background: lighten(color-get($mau,main),0%)
-		color: color-get($mau,trang)
-		+bor-rad(0)
-		i 
-			margin-right: .5rem
-	.other-text
-		overflow: hidden
-		width: 100%
-		hr
-			border-top: 1px dashed darken(color-get($mau,trang) ,10%)
-		h2
-			color: color-get($mau,main)
-			+fz(2rem)
-			margin-bottom: 0
-			text-transform: uppercase
-		h3
-			color: color-get($mau,main)
-			+fz(1.4rem)
-			margin-bottom: 0
-		.lists
-			.item
-				// display: flex
-				text-decoration: none
-				height: 100%
-				overflow: hidden
-				&:last-child
-					figure
-						margin-bottom: 1rem
-				&:first-child
-					figure
-						margin-top: 1rem
 	.text
 		ul
 			width: 100%
@@ -100,8 +68,8 @@
 				&:before
 					display: inline-block
 					content: ''
-					width: 8px
-					height: 8px
+					width: 6px
+					height: 6px
 					background: #c5c5c5
 					border-radius: 50%
 					margin-right: 12px
@@ -109,29 +77,46 @@
 			+lh(30px)
 			+fw(400)
 			+fz(1.1rem)
-			&:before
-				display: inline-block
-				content: ''
-				width: 8px
-				height: 8px
-				background: #c5c5c5
-				border-radius: 50%
-				margin-right: 12px
-	.other
+	.download 
+		background: lighten(color-get($mau,main),0%)
+		color: color-get($mau,trang)
+		+bor-rad(0)
+		i 
+			margin-right: .5rem
+	
+	.other-text
 		margin-top: 40px
 		+media-breakpoint-up(lg)
-			background: darken(color-get($mau,trang) ,4%)
-			hr
-				display: none
-			h2
-				background: color-get($mau,main)
-				color: color-get($mau,trang)
-				+pad(1rem)
-			.lists
-				+pad(1rem)
-				.item
-					border-bottom: 1px dashed darken(color-get($mau,trang) ,10%)
-					margin-bottom: 1rem
-					&:last-child
-						border-bottom: 0
-						margin-bottom: 0
+			margin-top: 0
+		background: darken(color-get($mau,trang) ,4%)
+		hr
+			display: none
+		h2
+			background: color-get($mau,main)
+			color: color-get($mau,trang)
+			+fz(1.8rem)
+			+pad(1rem)
+			margin-bottom: 0
+			text-transform: uppercase
+		.lists
+			+pad(1rem)
+			.item
+				border-bottom: 1px dashed darken(color-get($mau,trang) ,10%)
+				margin-bottom: 1rem
+				display: block
+				h3
+					+fz(1.1rem)
+					+fw(400)
+					color: color-get($mau,main)
+				time
+					+fz(.9rem)
+					+fw(200)
+					color: darken(color-get($mau,trang) ,30%)
+				p
+					color: darken(color-get($mau,trang) ,60%)
+					line-height: 1.3rem
+					+fz(1rem)
+					margin-bottom: 0
+				&:last-child
+					border-bottom: 0
+					margin-bottom: 0

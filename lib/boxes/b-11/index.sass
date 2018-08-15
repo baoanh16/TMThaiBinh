@@ -22,7 +22,11 @@
 			td, th 
 				border: 0
 				.badge
-					margin-left: .5rem 
+					margin-left: .5rem
+				a
+					color: color-get($mau, den)
+					text-decoration: none
+					transition: all .3s ease-in-out
 			tr 
 				cursor: pointer
 				&:nth-child(odd)
@@ -31,3 +35,6 @@
 					background: darken(color-get($mau,trang),8%)
 				&:hover 
 					background: darken(color-get($mau,xam-4),12%)
+					a
+						color: color-get($mau, main)
+				

@@ -12,16 +12,13 @@
 			display: flex
 			text-decoration: none
 			height: 100%
-			+bor-rad(5px)
 			overflow: hidden
 			figure
 				overflow: hidden
-				+bor-rad(5px)
-				margin-bottom: 2rem
+				margin-bottom: 30px
 				.boxzoom
 					overflow: hidden
 					position: relative
-					+bor-rad(5px)
 					&:after
 						content: ''
 						display: block
@@ -39,20 +36,19 @@
 						+transform(translateX(-50%) translateY(-50%))
 						z-index: 10
 						+fz(4rem)
-						+transition(all .2s ease-in-out)
+						+transition(all .3s ease-in-out)
 						.mdi-play-circle-outline
 							display: block
 						.mdi-play-circle
 							display: none
 					img
-						+bor-rad(5px 5px 0 0)
-						+transition(all .5s ease-in-out)
+						+transition(all .3s ease-in-out)
 						width: 100%
 				figcaption
 					padding: 1rem 0 0 0
 
 					h3
-						+fz(1.1rem)
+						+fz(18px)
 						+fw(400)
 						color: color-get($mau,den)
 						margin-bottom: 0

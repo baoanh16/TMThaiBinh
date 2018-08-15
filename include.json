@@ -11,6 +11,11 @@
                 "footer/f-3"
             ]
         },
+        "about": {
+            "body": [
+                "boxes/b-1"
+            ]
+        },
         "job": {
             "body": [
                 "boxes/b-11"
