@@ -8,28 +8,26 @@
 	+media-breakpoint-up(lg)
 		+pad(4rem 0)
 	.news-read
-		text-align: start
-		margin-bottom: 2rem
-		h1
-			+fz(2.2rem)
+		h1 
+			color: color-get($mau,main)
+			+fz(30px)
 			+fw(400)
-			color: color-get($mau, main)
-			text-transform: uppercase
-		hr
-			border-top: 1px dashed darken(color-get($mau,trang) ,10%)
+			margin-bottom: 20px
+		h3
+			+fz(1.75rem)
 		p
-			+fz(1.1rem)
+			+fz(16px)
+			color: #333333
 			+fw(400)
 			&.lead
 				+fw(bold)
 				+fz(1.25rem)
-		h3
-			+fz(1.75rem)
-			// color: color-get($mau, main)
 		time
 			+fz(1rem)
 			+fw(200)
 			color: darken(color-get($mau,trang) ,10%)
+		hr
+			border-top: 1px dashed darken(color-get($mau,trang) ,10%)
 		figure
 			text-decoration: none
 			figcaption
@@ -47,15 +45,16 @@
 				&:last-child
 					margin-right: 0
 	.othernews
-		overflow: hidden
-		width: 100%
+		margin-top: 40px
+		+media-breakpoint-up(lg)
+			margin-top: 0
 		hr
 			border-top: 1px dashed darken(color-get($mau,trang) ,10%)
 		h2
 			color: color-get($mau,main)
-			+fz(1.8rem)
+			+fz(30px)
+			+fw(400)
 			margin-bottom: 0
-			text-transform: uppercase
 		h3
 			color: color-get($mau,main)
 			+fz(1.4rem)
@@ -82,9 +81,9 @@
 					figcaption
 						padding: 1rem
 						h3
-							+fz(1.1rem)
+							+fz(14px)
 							+fw(400)
-							color: color-get($mau,main)
+							color: #333333
 						time
 							+fz(.9rem)
 							+fw(200)
@@ -107,18 +106,16 @@
 							p
 								color: darken(color-get($mau,trang) ,70%)
 		+media-breakpoint-up(lg)
-			background: darken(color-get($mau,trang) ,4%)
 			hr
 				display: none
 			h2
-				background: color-get($mau,main)
-				color: color-get($mau,trang)
-				+pad(1rem)
+				color: #333333
+				+pad(0 1rem 1rem 0)
 			.lists
-				+pad(1rem)
+				+pad(0)
 				.item
-					border-bottom: 1px dashed darken(color-get($mau,trang) ,10%)
-					margin-bottom: 1rem
+					border-bottom: 1px solid darken(color-get($mau,trang) ,10%)
+					margin-bottom: 30px
 					&:last-child
 						border-bottom: 0
 						margin-bottom: 0
@@ -129,7 +126,7 @@
 						align-items: flex-start
 						width: 100%
 						min-height: 80px
-						margin-bottom: 1rem
+						margin-bottom: 30px
 						.thumb
 							display: block
 							height: 100%

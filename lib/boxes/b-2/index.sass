@@ -1,0 +1,55 @@
+@import ../../_includes
+
+.canhcam-boxes-2
+	position: relative
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	.item
+		+ .item
+			margin-top: 50px
+	.img
+		height: 100%
+		img
+			width: 100%
+	.text
+		display: flex
+		justify-content: center
+		flex-direction: column
+		height: 100%
+		padding-top: 20px
+		+media-breakpoint-up(lg)
+			padding-top: 0
+		@media (min-width: 1500px)
+			display: block
+			padding-top: 60px
+		h4
+			text-transform: uppercase
+			color: color-get($mau, main)
+			+fw(500)
+			+fz(20px)
+			+lh(22px)
+			margin-bottom: 20px
+		p
+			+fz(15px)
+			+fw(300)
+			+lh(22px)
+			margin-bottom: 0
+			color: color-get($mau, den)
+		ul
+			margin-top: 15px
+			li
+				+fz(15px)
+				+fw(300)
+				+lh(30px)
+				&:before
+					content: '\f12c'
+					display: inline-block
+					font: normal normal normal 24px/1 "Material Design Icons"
+					font-size: inherit
+					text-rendering: auto
+					line-height: inherit
+					-webkit-font-smoothing: antialiased
+					color: color-get($mau, duong-5)
+					+fz(15px)
+					margin-right: 8px

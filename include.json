@@ -2,7 +2,9 @@
     "SETUP": {
         "index": {
             "header": [
-                "header/h-1"
+                "header/h-1",
+                "banner/b-1",
+                "breadcrumb/b-1"
             ],
             "body": [
                 "pagination/p-1"
@@ -18,6 +20,7 @@
         },
         "job": {
             "body": [
+                "boxes/b-2",
                 "boxes/b-11"
             ]
         },
