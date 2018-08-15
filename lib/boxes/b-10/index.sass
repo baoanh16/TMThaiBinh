@@ -24,6 +24,25 @@
 		color: lighten(color-get($mau,main),0%)
 		font-weight: 400
 		+fz(1.75rem)
+	ul
+		width: 100%
+		padding-left: 0
+		margin-bottom: 30px
+		li
+			list-style-type: none
+			&:before
+				display: inline-block
+				content: ''
+				width: 8px
+				height: 8px
+				background: #c5c5c5
+				border-radius: 50%
+				margin-right: 12px
+	p, li
+		+lh(30px)
+		+fw(300)
+		+fz(16px)
+		margin-bottom: 0
 	h4
 		color: lighten(color-get($mau,main),0%)
 		font-weight: 400
@@ -36,17 +55,38 @@
 		display: block
 		i 
 			margin-right: .25rem 
-	.item 
-		a
-			color: darken(color-get($mau,trang),70%)
-			text-decoration: none
-			+fz(15px)
 	.download 
 		background: lighten(color-get($mau,main),0%)
 		color: color-get($mau,trang)
 		+bor-rad(0)
 		i 
 			margin-right: .5rem
+	.other-text
+		overflow: hidden
+		width: 100%
+		hr
+			border-top: 1px dashed darken(color-get($mau,trang) ,10%)
+		h2
+			color: color-get($mau,main)
+			+fz(2rem)
+			margin-bottom: 0
+			text-transform: uppercase
+		h3
+			color: color-get($mau,main)
+			+fz(1.4rem)
+			margin-bottom: 0
+		.lists
+			.item
+				// display: flex
+				text-decoration: none
+				height: 100%
+				overflow: hidden
+				&:last-child
+					figure
+						margin-bottom: 1rem
+				&:first-child
+					figure
+						margin-top: 1rem
 	.text
 		ul
 			width: 100%
@@ -80,8 +120,18 @@
 	.other
 		margin-top: 40px
 		+media-breakpoint-up(lg)
-			margin-top: 0
-		.other-text
-			background: color-get($mau,xam-4)
-			+pad(30px)
-
+			background: darken(color-get($mau,trang) ,4%)
+			hr
+				display: none
+			h2
+				background: color-get($mau,main)
+				color: color-get($mau,trang)
+				+pad(1rem)
+			.lists
+				+pad(1rem)
+				.item
+					border-bottom: 1px dashed darken(color-get($mau,trang) ,10%)
+					margin-bottom: 1rem
+					&:last-child
+						border-bottom: 0
+						margin-bottom: 0
