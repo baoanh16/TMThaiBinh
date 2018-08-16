@@ -16,9 +16,9 @@ section.canhcam-form-1
 				form.validator
 					.row
 						.form-group.col-md-6
-							label(for='name') Name
+							label(for='name') Họ tên
 								span.text-danger (*)
-							input#name.form-control(type='text', placeholder='Name', data-error="Vui lòng nhập thông tin", required)
+							input#name.form-control(type='text', placeholder='Họ tên', data-error="Vui lòng nhập thông tin", required)
 							.help-block.with-errors
 						.form-group.col-md-6
 							label(for='Email') Email
@@ -26,18 +26,18 @@ section.canhcam-form-1
 							.help-block.with-errors
 					.row
 						.form-group.col-md-6
-							label(for='Phone') Phone
-							input#Phone.form-control(type='text', placeholder='Phone', data-error="Vui lòng nhập thông tin", pattern="^[_A-z0-9]{1,}$", required)
+							label(for='Phone') Số điện thoại
+							input#Phone.form-control(type='text', placeholder='Số điện thoại', data-error="Vui lòng nhập thông tin", pattern="^[_A-z0-9]{1,}$", required)
 							.help-block.with-errors
 						.form-group.col-md-6
-							label(for='Address') Address
-							input#Address.form-control(type='text', placeholder='Address')
+							label(for='Address') Địa chỉ
+							input#Address.form-control(type='text', placeholder='Địa chỉ')
 					.row
 						.form-group.col
-							label(for='sms') Message
+							label(for='sms') Nội dung
 							textarea#sms.form-control(name="sms", cols="30", rows="5")
 
 					.row
 						.col
 							button.btn.btn-outline-primary.text-uppercase(type="submit")
-								| Submit
+								| GỬI

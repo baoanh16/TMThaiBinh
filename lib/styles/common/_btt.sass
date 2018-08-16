@@ -13,17 +13,19 @@
 	transition: opacity 0.2s ease-out
 	opacity: 0
 	display: none
-	+pad(.25rem .5rem)
+	+pad(0 .5rem.35rem .5rem)
 	+media-breakpoint-up(md)
 		bottom: 40px
 		right: 40px
 	span
 		display: block
+		line-height: 1
 	i
 		line-height: .75rem
 		height: .75rem
 	&:hover
-		background: #e9ebec
+		background: #f5821f
+		color: white
 	&.show
 		opacity: 1
 		display: block

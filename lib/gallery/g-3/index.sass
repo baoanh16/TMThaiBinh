@@ -4,9 +4,9 @@
 //////////////////////////////////////
 
 .canhcam-gallery-3
-	+pad(2rem 0)
+	+pad(1rem 0 2rem 0)
 	+media-breakpoint-up(lg)
-		+pad(4rem 0)
+		+pad(2rem 0 4rem 0)
 	.gallery-details
 		.card-columns
 			+media-breakpoint-up(sm)
@@ -83,3 +83,104 @@
 
 .lg-backdrop.in
 	background: rgba(255,255,255,.8)
+
+
+.canhcam-gallery-2
+	+pad(1rem 0 2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(2rem 0 4rem 0)
+	.gallery-details
+		.item
+			display: flex
+			text-decoration: none
+			height: 100%
+			overflow: hidden
+			figure
+				overflow: hidden
+				margin-bottom: 30px
+				.boxzoom
+					overflow: hidden
+					position: relative
+					&:after
+						content: ''
+						display: block
+						z-index: 1
+						background: rgba(0,0,0,.5)
+						width: 100%
+						height: 100%
+						+pos(abs, 0 0 null null)
+					+media-breakpoint-up(sm)
+						max-height: 200px
+						min-height: 200px
+					.zoom-item
+						color: color-get($mau,trang)
+						+pos(abs, 50% null null 50%)
+						+transform(translateX(-50%) translateY(-50%))
+						z-index: 10
+						+fz(4rem)
+						+transition(all .3s ease-in-out)
+						.mdi-play-circle-outline
+							display: block
+						.mdi-play-circle
+							display: none
+					img
+						+transition(all .3s ease-in-out)
+						width: 100%
+				figcaption
+					padding: 1rem 0 0 0
+
+					h3
+						+fz(18px)
+						+fw(400)
+						color: color-get($mau,den)
+						margin-bottom: 0
+			&:hover
+				figure
+					.boxzoom
+						&:after
+							z-index: -1
+						img
+							+transform(scale(1.1))
+						.zoom-item
+							+text-sha(1px 1px 3px rgba(0,0,0,.4))
+							.mdi-play-circle-outline
+								display: none
+							.mdi-play-circle
+								display: block
+
+
+	&.canhcam-video-fixed-size.lg-outer
+		padding: 0
+		.lg-inner
+			background-color: #000
+		.lg-sub-html
+			position: absolute
+			text-align: left
+		.lg-toolbar
+			background-color: transparent
+			height: 0
+			.lg-icon
+				color: #FFF
+		.lg-img-wrap
+			padding: 0
+
+.lg-backdrop.in
+	background: rgba(255,255,255,.8)
+
+
+.gallery-tab
+	justify-content: center
+	padding-top: 2rem
+	+media-breakpoint-up(lg)
+		padding-top: 4rem
+	.nav-item
+		+mar(0 .75rem)
+		.nav-link
+			+pad(.5rem 2.5rem)
+			+bor-rad(18px)
+			background: color-rgba(color-get($mau,den),.1)
+			color: color-get($mau, main)
+			+fz(16px)
+			&.active
+				background: color-get($mau, main)
+				color: white

@@ -12,7 +12,6 @@
 			position: relative
 			margin-bottom: 2rem
 			overflow: hidden
-			
 			img
 				width: 100%
 			.item
@@ -31,6 +30,7 @@
 				h3
 					+fz(1.5rem)
 					+fw(400)
+					margin-bottom: 0
 				time
 					+fz(.9rem)
 					+fw(200)
@@ -111,9 +111,10 @@
 					padding: 1rem
 
 					h3
-						+fz(1.1rem)
+						+fz(16px)
 						+fw(400)
 						color: color-get($mau,main)
+						margin-bottom: 0
 					time
 						+fz(.9rem)
 						+fw(200)
@@ -121,8 +122,9 @@
 					p
 						color: darken(color-get($mau,trang) ,60%)
 						line-height: 1.3rem
-						+fz(1rem)
+						+fz(14px)
 						margin-bottom: 0
+						margin-top: .75rem
 			&:hover
 				figure
 					background: darken(color-get($mau,trang) ,7%)
