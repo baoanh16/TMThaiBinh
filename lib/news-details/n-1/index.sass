@@ -125,18 +125,18 @@
 						display: flex
 						align-items: flex-start
 						width: 100%
-						min-height: 80px
-						margin-bottom: 30px
+						// min-height: 80px
+						// margin-bottom: 30px
 						.thumb
 							display: block
 							height: 100%
 							+pos(abs, 0 null null 0)
-							width: 30%
-							max-width: 30%
+							width: 50%
+							max-width: 50%
 						img
-							display: none
+							width: calc(50% - 1rem)
 						figcaption
-							+pad(0 0 0 calc(30% + 1rem))
+							+pad(0 0 0 1rem)
 							p
 								display: none
 					&:hover

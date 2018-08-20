@@ -4,10 +4,15 @@
 		.pagination
 			justify-content: center
 			li
-				+pad(0 .5rem)
+				+pad(0 1rem)
 				a, span
-					+fz(16px)
-				span
-					color: color-get($mau, main)
+					+fz(18px)
+				// span
+				// 	color: color-get($mau, main)
 				a
+					text-decoration: none
 					color: color-get($mau, den)
+				&:hover, &.active
+					a,span
+						color: color-get($mau, main)
+
