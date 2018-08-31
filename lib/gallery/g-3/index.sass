@@ -170,17 +170,26 @@
 
 .gallery-tab
 	justify-content: center
-	padding-top: 2rem
+	margin-top: 2rem
 	+media-breakpoint-up(lg)
-		padding-top: 4rem
+		margin-top: 4rem
+	.container
+		background: color-rgba(color-get($mau,den),.1)
 	.nav-item
-		+mar(0 .75rem)
 		.nav-link
-			+pad(.5rem 2.5rem)
-			+bor-rad(18px)
-			background: color-rgba(color-get($mau,den),.1)
-			color: color-get($mau, main)
+			+pad(.5rem .75rem)
+			color: color-get($mau, den)
+			background: none
 			+fz(16px)
-			&.active
-				background: color-get($mau, main)
-				color: white
+			&.active, &:hover
+				color: color-get($mau, main)
+		+ .nav-item
+			position: relative
+			&:after
+				content: ''
+				width: 1px 
+				height: 16px
+				background: black
+				box-shadow: 0 0 1px rgba(0,0,0,.2)
+				+pos(abs, 50% null null 0)
+				transform: translateY(-50%)

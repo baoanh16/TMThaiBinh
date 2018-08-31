@@ -1,0 +1,27 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-nav-1
+	padding-top: 2rem
+	+media-breakpoint-up(lg)
+		padding-top: 4rem
+	.nav-item
+		.nav-link
+			+pad(.5rem .75rem)
+			color: color-get($mau, den)
+			background: none
+			+fz(16px)
+			&.active, &:hover
+				color: color-get($mau, main)
+		+ .nav-item
+			position: relative
+			&:after
+				content: ''
+				width: 1px 
+				height: 16px
+				background: black
+				box-shadow: 0 0 1px rgba(0,0,0,.2)
+				+pos(abs, 50% null null 0)
+				transform: translateY(-50%)

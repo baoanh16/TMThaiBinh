@@ -1,0 +1,58 @@
+@import ../../_includes
+.canhcam-boxes-4
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	.col-lg-3
+		margin-top: 30px
+	.maps
+		height: 100%
+		iframe
+			width: 100%
+			height: 100%
+	.list-address
+		padding-left: 8px
+		margin-left: -8px
+		max-height: 600px
+		overflow-y: scroll
+	.address-item
+		+pad(1rem)
+		height: 100%
+		position: relative
+		cursor: pointer
+		h4
+			+fz(20pxrem)
+			+fw(500)
+		p
+			+fz(16px)
+			margin-bottom: .5rem
+			&:nth-child(2)
+				&:before
+					display: inline-block
+					font: normal normal normal 24px/1 "Material Design Icons"
+					content: '\f34e'
+					text-rendering: auto
+		&:before
+			opacity: 0
+			content: ''
+			position: absolute
+			right: 100%
+			top: 50%
+			width: 0
+			height: 0
+			transform: translateY(-50%)
+			border-right: 8px solid color-get($mau, main)
+			border-top: 8px solid transparent
+			border-bottom: 8px solid transparent
+		+ .address-item
+			border-top: 1px solid color-rgba(color-get($mau, den), .1)
+		&.active, 
+		&:hover
+			background: color-get($mau, main)
+			h4, p
+				color: color-get($mau, trang)
+			p:nth-child(2)
+				&:before
+					color: color-get($mau, trang)
+			&:before
+				opacity: 1

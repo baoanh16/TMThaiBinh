@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'KONEInformation-Regular';
+  src: url('KONEInformation-Regular.woff') format('woff'),
+       url('KONEInformation-Regular.ttf') format('truetype'),
+       url('KONEInformation-Regular.svg#KONEInformation-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'kone-information';
+  src: url('kone-information.eot');
+  src: url('kone-information.woff2') format('woff2'),
+       url('kone-information.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

@@ -1,0 +1,35 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+
+
+.canhcam-boxes-3
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	.job-list
+		.info
+			.item
+				height: 100%
+				+pad(2rem 1rem)
+				background: darken(color-get($mau, trang), 3%)
+				.item-top
+					display: flex
+					justify-content: space-between
+					align-items: center
+					span
+						color: color-get($mau , main)
+						+fz(4.2rem)
+						+fw(500)
+				.item-bottom
+					h4
+						+fz(1.1rem)
+						+fw(700)
+						text-transform: uppercase
+			&.top-part
+				+media-breakpoint-up(lg)
+					+pad(0 10rem)
+			.part-list
+				margin-bottom: 1.6rem

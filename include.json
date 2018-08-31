@@ -21,6 +21,7 @@
         "job": {
             "body": [
                 "boxes/b-2",
+                "boxes/b-3",
                 "boxes/b-11"
             ]
         },
@@ -32,6 +33,7 @@
         "contact": {
             "body": [
                 "form/f-1",
+                "boxes/b-4",
                 "map/m-1"
             ]
         },
@@ -47,6 +49,7 @@
         },
         "news": {
             "body": [
+                "nav/n-1",
                 "news/n-2"
             ]
         },

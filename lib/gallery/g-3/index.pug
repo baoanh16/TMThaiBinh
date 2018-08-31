@@ -1,8 +1,11 @@
-ul#pills-tab.nav.nav-pills.gallery-tab(role='tablist')
-	li.nav-item
-		a#image-tab.nav-link.active(data-toggle='pill', href='#image', role='tab', aria-controls='image', aria-selected='true') Thư Viện Ảnh
-	li.nav-item
-		a#video-tab.nav-link(data-toggle='pill', href='#video', role='tab', aria-controls='video', aria-selected='false') Video
+.container
+	.row
+		.col-12
+			ul#pills-tab.nav.nav-pills.gallery-tab(role='tablist' bg-img="./img/nav-bg.png")
+				li.nav-item
+					a#image-tab.nav-link.active(data-toggle='pill', href='#image', role='tab', aria-controls='image', aria-selected='true') Thư Viện Ảnh
+				li.nav-item
+					a#video-tab.nav-link(data-toggle='pill', href='#video', role='tab', aria-controls='video', aria-selected='false') Video
 #pills-tabContent.tab-content
 	#image.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='image-tab')
 		.canhcam-gallery-3
