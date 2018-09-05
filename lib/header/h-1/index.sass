@@ -83,6 +83,8 @@
 			>.row
 				+pad(8px 0)
 				.logo
+					display: flex
+					align-items: center
 					max-width: 190px
 					img
 						width: 100%
@@ -144,13 +146,13 @@
 								li
 									position: relative
 									+ li
-										margin-left: 20px
+										margin-left: 14px
 										+media-breakpoint-up(xl)
-											margin-left: 35px
+											margin-left: 20px
 									a
 										color: black
 										text-transform: uppercase
-										+fz(16px)
+										+fz(14px)
 										text-decoration: none
 										+media-breakpoint-up(xl)
 											+fz(18px)
@@ -212,3 +214,6 @@
 												-webkit-font-smoothing: antialiased
 												+fz(16px)
 												color: white
+header
+	&.active
+		box-shadow: 0 0 10px rgba(0,0,0,.4)
