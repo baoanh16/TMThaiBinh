@@ -137,7 +137,7 @@
 +media-breakpoint-up(xl)
 	.container
 		max-width: 1240px
-		
+
 html, body
 	font-family: 'SF Compact Text', sans-serif
 	font-size: 14px
@@ -319,7 +319,7 @@ header
 	input[type="radio"]:indeterminate + label::after
 		background: none
 
-.k-responsive-menu.k-menu-horizontal.k-active-mobile .dropdown-menu, 
+.k-responsive-menu.k-menu-horizontal.k-active-mobile .dropdown-menu,
 [k-responsive-menu].k-menu-horizontal.k-active-mobile .dropdown-menu
 	&.dropdown-arrow
 		position: relative !important
@@ -352,9 +352,35 @@ header
 
 
 .tb-title
-	+fz(32px)
-	+fw(700)
+	+fz(2.86rem)
+	+fw(400)
 	text-transform: uppercase
 	text-align: center
 	margin-bottom: 40px
-	color: color-get($mau, main)
+	&.--black
+		color: color-get($mau , den)
+	&.--white
+		color: color-get($mau , trang)
+	&.--orange
+		color: color-get($mau, main)
+.sub-title
+	color: color-get($mau , xam-5)
+	text-transform: uppercase
+	+fz(1.43rem)
+	+fw(400)
+
+
+
+.overlay
+	img
+		+transition(all .4s ease-in-out)
+	h3
+		+fz(1.14rem)
+		+fw(400)
+		color: color-get($mau , den-3)
+		+transition(all .4s ease-in-out)
+	&:hover
+		img
+			+transform(scale(1.2))
+		h3
+			color: color-get($mau , main)

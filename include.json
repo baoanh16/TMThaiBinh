@@ -3,7 +3,9 @@
         "index": {
             "header": [
                 "header/h-1",
+                "header/h-7",
                 "banner/b-1",
+                "breadcrumb/b-6",
                 "breadcrumb/b-1"
             ],
             "body": [

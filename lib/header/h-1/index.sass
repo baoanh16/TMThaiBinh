@@ -39,14 +39,14 @@
 								li
 									a
 										display: block
-										+fz(18px)
+										+fz(1.14rem)
 										+pad(.5rem 0)
 										color: white
 										text-transform: uppercase
 					.top
 						order: 2
 						flex-direction: column
-						div
+						.hotline,.maintenance,.unknown,.social
 							a
 								color: white
 								+pad(.5rem 0)
@@ -58,10 +58,10 @@
 							a
 								color: color-get($mau, trang)
 						.language
-							select
-								font-size: 20px
-								border: none
-								color: color-get($mau, main)
+							// select
+							// 	font-size: 20px
+							// 	border: none
+							// 	color: color-get($mau, main)
 					&.show
 						transform: translateX(0)
 				.toggle-menu
@@ -94,7 +94,7 @@
 					.top
 						p
 							+mar(0)
-						div
+						.hotline,.maintenance,.unknown,.social
 							padding-left: 44px
 							vertical-align: middle
 							display: flex
@@ -124,20 +124,25 @@
 								+ li
 									padding-left: 20px
 						.social, .unknown, .language
-							a, option, select
-								color: color-get($mau, xam-1)
+							a
+								// color: color-get($mau, xam-1)
 						.language
-							select
-								border: none
-								outline: none
-								padding-right: 15px
-								+fz(16px)
-								background-image: url('../img/lang-bg.png')
-								-webkit-appearance: none
-								background-size: 100%
-								background-position: center
-								background-repeat-y: no-repeat
-					.bottom
+							.dropdown
+								button
+									background: none
+									border: none
+									outline: none
+					// 		select
+					// 			border: none
+					// 			outline: none
+					// 			padding-right: 15px
+					// 			+fz(16px)
+					// 			background-image: url('../img/lang-bg.png')
+					// 			-webkit-appearance: none
+					// 			background-size: 100%
+					// 			background-position: center
+					// 			background-repeat-y: no-repeat
+					// .bottom
 						margin-top: 16px
 						.menu
 							display: flex

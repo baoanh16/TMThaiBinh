@@ -6,11 +6,11 @@ header
 			.menu-wrap.ml-auto
 				.row.no-gutters.top
 					.hotline
-						a(href="tel:917001414") 
+						a(href="tel:917001414")
 							span.mdi.mdi-phone
 							span 0917.00.14.14
 					.maintenance
-						p Bảo trì sửa chữa: 
+						p Bảo trì sửa chữa:
 							a(href="1900545432") 1900 54 54 32
 					.unknown
 						a(href="#")
@@ -27,14 +27,16 @@ header
 								a(href="#")
 									span.fab.fa-youtube
 					.language
-						select
-							option(value="VN") VN
-							option(value="EN") EN
+						.dropdown
+							button#dropdownMenuButton.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+								| VN
+							.dropdown-menu(aria-labelledby='dropdownMenuButton')
+								a.dropdown-item(href='#') EN
 				.row.no-gutters.bottom
 					.menu
 						ul.nav
 							li.active
-								a(href="index.html") Trang chủ 
+								a(href="index.html") Trang chủ
 							li
 								a(href="about.html") Giới thiệu
 							li
