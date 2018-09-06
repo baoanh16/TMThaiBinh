@@ -6,6 +6,10 @@
 .canhcam-header-7
 	background: color-get($mau,trang)
 	border-bottom: 1px solid darken(color-get($mau,trang),20%)
+	#phone,#des,#globe
+		padding-left: 2rem
+		color: color-get($mau , trang)
+		+fz(1rem)
 	.navbar
 		align-items: center
 		.title
@@ -25,6 +29,8 @@
 				i
 					font-size: 3rem
 					line-height: 3rem
+	.language
+		padding-right: 0!important
 	.navbar-toggler
 		border: 0
 		.mdi
@@ -36,8 +42,45 @@
 		img
 			max-height: 2rem
 			+transition(all ease-in-out .3s)
+	.wrap-top-menu
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		+fz(1.07rem)
+		+fw(400)
+		color: color-get($mau , xam-3)
+		p
+			margin-bottom: 0
+			span
+				color: color-get($mau , main)
+		.social
+			display: flex
+			align-items: center
+			justify-content: center
+			list-style-type: none
+			padding-left: 0
+			+mar(0)
+			li
+				margin-right: 1rem
+				&:last-child
+					margin-right: 0
+
+		.phone
+			span , a
+				color: color-get($mau , main)
+				// +fz(1.29rem)
+				&:before
+					content: '\f3f2'
+					display: inline-block
+					font-family: 'Material Design Icons'
+					margin-right: .3rem
 	.language
 		+pad(0 1rem 0 0)
+		button
+			background: none
+			border: none
+			outline: none
+			+pad(0)
 		+media-breakpoint-up(md)
 			+pad(0 .5rem)
 		+media-breakpoint-up(lg)
@@ -101,10 +144,16 @@
 			+pos(fix, 0 0 null null)
 			z-index: 999
 	+media-breakpoint-up(md)
+		#phone,#des,#globe
+			display: none
 		// border-bottom: 0
 		&.fixedheader
 			&.active
 				+box-sha()
+		.wrap-top-menu
+			.phone
+				span , a
+					+fz(.9rem)
 		.navbar
 			padding-top: 0
 			padding-bottom: 0
@@ -138,6 +187,24 @@
 							color: color-get($mau,main)
 
 	+media-breakpoint-up(md)
+		.wrap-bottom-menu
+			display: flex
+			align-items: center
+		.wrap-top-menu
+			padding-top: .3rem
+			.line
+				+pad(null 1rem)
+				position: relative
+				&:after
+					content: ''
+					width: 1px
+					height: 16px
+					background: color-get($mau , xam-6)
+					+pos(abs , 50% 0 null null)
+					+transform(translateY(-50%))
+			.phone
+				span , a
+					+fz(1.29rem)
 		&.fixedheader
 			.navbar-brand
 				img
@@ -193,14 +260,13 @@
 			.navbar-nav
 				.nav-item
 					.nav-link
-						+pad(2.5rem .5rem)
+						+pad(1.87rem .5rem)
 						+fz(1rem)
-						text-transform: uppercase
 						+transition(all ease-in-out .3s)
 		&.fixedheader
 			.navbar-brand
 				img
-					max-width: 15rem
+					max-width: 14rem
 			&.active
 				.navbar-brand
 					img
@@ -209,18 +275,27 @@
 					.navbar-nav
 						.nav-item
 							.nav-link
-								+pad(1.5rem .5rem)
+								+pad(1rem .5rem)
 	+media-breakpoint-up(xl)
 		.navbar
 			.navbar-nav
 				.nav-item
 					.nav-link
-						+fw(bold)
-						+pad(2.5rem 1rem)
+						text-transform: uppercase
+						+fw(400)
+						+pad(1.36rem 1rem)
 		&.fixedheader
 			&.active
 				.navbar
 					.navbar-nav
 						.nav-item
 							.nav-link
-								+pad(1.5rem 1rem)
+								+pad(1rem 1rem)
+	+media-breakpoint-only(lg)
+		.navbar
+			.navbar-nav
+				.nav-item
+					.nav-link
+						+fz(1rem)
+
+

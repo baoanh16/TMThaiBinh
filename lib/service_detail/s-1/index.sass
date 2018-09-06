@@ -1,0 +1,77 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+
+.canhcam-service-detail-1
+	padding-bottom: 3rem
+	.service-lists
+		.item
+			figure
+				width: 100%
+				.boxzoom
+					+box-sha(6px -6px 0 color-get($mau , main))
+					img
+						width: 100%
+				figcaption
+					p
+						+fz(1.07rem)
+						+fw(400)
+						margin-bottom: 0
+						color: color-get($mau , den-4)
+	+media-breakpoint-up(lg)
+		.service-lists
+			.item
+				figure
+					.boxzoom
+						position: relative
+						box-shadow: none
+						&:before
+							content: ''
+							display: block
+							height: 75%
+							width: 100%
+							background: color-get($mau , main)
+							+pos(abs, 50% null null null)
+							z-index: -1
+							+transform(translateY(-50%))
+
+			.top-list
+				.item
+					&:first-child
+						padding-left: 4.43rem
+						.boxzoom
+							&:before
+								left: 1rem
+					&:last-child
+						figure
+							figcaption
+								p
+									padding-top: 3.07rem
+			.bottom-list
+				margin-top: -7rem
+				.item
+					display: flex
+					&:first-child
+						padding-right: 2.5rem
+						.boxzoom
+							&:before
+								left: -1rem
+					&:last-child
+						figure
+							align-self: flex-end
+							figcaption
+								p
+									padding-bottom: 3.07rem
+			.top-list,.bottom-list
+				p
+					+transition(all .5s ease-in-out)
+				&:hover
+					p
+						color: color-get($mau , main)
+
+	+media-breakpoint-up(xl)
+		.service-lists
+			.bottom-list
+				margin-top: -11.71rem

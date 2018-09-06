@@ -1,0 +1,43 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+
+
+.canhcam-project-detail-2
+	.project-lists
+		h1
+			+fz(2.14rem)
+			margin-bottom: 2.14rem
+		.list-slide
+			+box-sha( 20px 20px 0 color-get($mau , main))
+		.list-content
+			p
+				+fz(1.14rem)
+				+fw(500)
+				color: color-get($mau , den)
+			.location
+				padding-bottom: 1rem
+				border-bottom: 1px dashed color-get($mau , xam-7)
+				p
+					margin-bottom: 0
+			.des
+				padding-top: 1rem
+			.info
+				ul
+					list-style-type: none
+					li
+						display: flex
+						align-items: center
+						margin-bottom: 1rem
+						img
+							margin-right: .5rem
+						span
+							+fz(1.07rem)
+							+fw(400)
+							color: color-get($mau , den-4)
+	+media-breakpoint-up(lg)
+		.list-content
+			padding-top: 1.5rem
+			padding-left: 2.64rem

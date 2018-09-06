@@ -1,0 +1,31 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-news-details-2,.canhcam-project-detail-2
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	.list-slide
+		position: relative
+		.owl-dots
+			+pos(abs , null null 2rem 50%)
+			+transform(translateX(-50%))
+			.owl-dot
+				&.active
+					span
+						background: color-get($mau , main)
+	.othernews
+		.lists
+			.item
+				figure
+					figcaption
+						h3
+							text-transform: uppercase
+							+fz(1.14rem)
+							+fw(400)
+							color: color-get($mau , den)
+							text-align: center
+							+media-breakpoint-up(lg)
+								text-align: left

@@ -3,25 +3,37 @@
 // CODE
 //////////////////////////////////////
 
-.canhcam-nav-1
+.canhcam-nav-1,.canhcam-nav-3
 	padding-top: 2rem
-	+media-breakpoint-up(lg)
-		padding-top: 4rem
+	padding-bottom: 3rem
+	// +media-breakpoint-up(lg)
+	// 	padding-top: 4rem
 	.nav-item
 		.nav-link
-			+pad(.5rem .75rem)
-			color: color-get($mau, den)
+			+pad(.5rem 2rem)
+			color: color-get($mau, xam-5)
 			background: none
-			+fz(16px)
+			+fw(400)
+			+fz(1.07rem)
 			&.active, &:hover
 				color: color-get($mau, main)
 		+ .nav-item
 			position: relative
 			&:after
 				content: ''
-				width: 1px 
+				width: 1px
 				height: 16px
-				background: black
+				background: color-get($mau , xam-8)
 				box-shadow: 0 0 1px rgba(0,0,0,.2)
 				+pos(abs, 50% null null 0)
 				transform: translateY(-50%)
+		&:first-child
+			.nav-link
+				padding-left: 0
+		&:last-child
+			.nav-link
+				padding-right: 0
+	+media-breakpoint-up(xl)
+		.nav-item
+			.nav-link
+				+pad(null 3rem)

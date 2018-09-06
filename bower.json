@@ -37,6 +37,7 @@
     "linearicons": "1.0.1",
     "fancybox": "3.3.5",
     "jquery.scrollbar": "0.2.11",
-    "swiper": "4.3.3"
+    "swiper": "4.3.3",
+    "matchHeight": "matchheight#^0.7.2"
   }
 }

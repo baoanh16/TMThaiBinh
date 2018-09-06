@@ -354,15 +354,22 @@ header
 .tb-title
 	+fz(2.86rem)
 	+fw(400)
-	text-transform: uppercase
+	// text-transform: uppercase
 	text-align: center
 	margin-bottom: 40px
+	color: color-get($mau, main)
 	&.--black
 		color: color-get($mau , den)
 	&.--white
 		color: color-get($mau , trang)
 	&.--orange
 		color: color-get($mau, main)
+	&.--title-left
+		text-align: left
+	&.--title-up
+		text-transform: uppercase
+	&.--title-small
+		+fz(2.14rem)
 .sub-title
 	color: color-get($mau , xam-5)
 	text-transform: uppercase

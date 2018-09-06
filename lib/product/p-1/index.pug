@@ -1,0 +1,14 @@
+section.canhcam-product-1
+	article.product-lists
+		.container
+			h1.tb-title.--orange Sản phẩm
+			.row
+				- var index = 1
+				each val, key in ['Thang máy','Thang cuộn','stairlift','homelift','dumbwaiter']
+					.col-md-6.col-lg-4.item
+						a(href="product-details.html")
+							figure
+								.boxzoom
+									img(src="./img/product/product_"+ index++ +".png", alt="alt")
+								figcaption
+									h3= val

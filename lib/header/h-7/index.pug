@@ -13,29 +13,57 @@ header.canhcam-header-7
 				h2 Menu
 				.closebnt
 					i.mdi.mdi-close
-			ul.navbar-nav.mt-2.mt-md-0
-				li.nav-item.active
-					a.nav-link(href='#') Giới thiệu
-				li.nav-item
-					a.nav-link(href='#') Dự án
-				li.nav-item
-					a.nav-link(href='#') Tin tức
-				li.nav-item
-					a.nav-link(href='#') Phát triển bền vững
-				li.nav-item
-					a.nav-link(href='#') Thư viện
-				li.nav-item
-					a.nav-link(href='#') Tuyển dụng
-				li.nav-item
-					a.nav-link(href='#') Liên hệ
+			.wrap-menu
+				.wrap-top-menu
+					.phone.line(k-menu-map-to="#phone")
+						span 0917.00.14.14
+					.des.line(k-menu-map-to="#des")
+						p Bảo trì sửa chữa:
+							span 1900 54 54 32
+					.globe.line(k-menu-map-to="#globe")
+						a.fas.fa-globe
+					ul.social.line
+						li
+							a.fab.fa-facebook-f(href="")
+						li
+							a.fab.fa-google-plus-g(href="")
+						li
+							a.fab.fa-youtube(href="")
+					.language(k-menu-map-to="#language")
+						.dropdown
+							button#dropdownMenuButton.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+								| VN
+							.dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownMenuButton')
+								a.dropdown-item(href='#') EN
+				.wrap-bottom-menu
+					ul.navbar-nav.mt-2.mt-md-0
+						li.nav-item.active
+							a.nav-link(href='index.html') Trang chủ
+						li.nav-item
+							a.nav-link(href='about.html') Giới thiệu
+						li.nav-item
+							a.nav-link(href='product.html') Sản phẩm
+						li.nav-item
+							a.nav-link(href='service.html') Dịch vụ
+						li.nav-item
+							a.nav-link(href='project.html') Dự án
+						li.nav-item
+							a.nav-link(href='#') Truyền thông
+						li.nav-item
+							a.nav-link(href='job.html') Tuyển dụng
+						li.nav-item
+							a.nav-link(href='contact.html') Liên hệ
+					.my-2.my-md-0.btnsearch.d-none.d-md-block
+						.btn.btn-link
+							i.fa.fa-search
+							i.fa.fa-times
 
-
-			.language(k-menu-map-to="#language")
-				ul.list-unstyled
-					li
-						a(href='#')
-							span English
-							img(src="./img/icon/usa.png", alt="")
+			//- .language(k-menu-map-to="#language")
+			//- 	ul.list-unstyled
+			//- 		li
+			//- 			a(href='#')
+			//- 				span English
+			//- 				img(src="./img/icon/usa.png", alt="")
 
 			form.form-inline.my-2.my-md-0.search
 				.input-group
@@ -43,7 +71,7 @@ header.canhcam-header-7
 					.input-group-append
 						button.btn.btn-primary(type='submit')
 							i.fa.fa-search
-			.my-2.my-md-0.btnsearch.d-none.d-md-block
-				.btn.btn-link
-					i.fa.fa-search
-					i.fa.fa-times
+			#phone
+			#des
+			#globe
+

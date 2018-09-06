@@ -10,7 +10,8 @@ function setMain() {
             if (!CANHCAM_APP.ACTIVE_FIXED_HEADER) {
                 $("main").css('padding-top', 'initial')
             } else {
-                $("main").css('padding-top', '90px')
+                // $("main").css('padding-top', '90px')
+                $("main").css('padding-top', headerHeight + 'px')
             }
         }
     }

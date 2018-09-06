@@ -1,0 +1,14 @@
+section.canhcam-service-1
+	article.service-lists
+		.container
+			h1.tb-title.--orange Dịch vụ
+			.row
+				- var index = 1
+				each val, key in ['Tư vấn - Thiết kế','Thi công - Lắp đặt','Bảo trì - Sửa chữa','Dịch vụ cải tạo thang' , 'Chăm sóc khách hàng']
+					.col-md-6.col-lg-4.item
+						a(href="service-details.html")
+							figure
+								.boxzoom
+									img(src="./img/service/service_"+ index++ +".png", alt="alt")
+								figcaption
+									h3= val

@@ -1,0 +1,46 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+
+.canhcam-service-detail-2,.canhcam-news-details-2
+	padding-bottom: 4rem
+	.list-wrapper
+		background: color-get($mau , xam-4)
+		+pad(1.5rem)
+		h3
+			+fz(1.43rem)
+			+fw(400)
+			color: color-get($mau , den)
+			text-align: center
+			margin-bottom: 1.5rem
+		figure
+			margin-bottom: 0
+			p
+				margin-bottom: 0
+				+fz(1rem)
+				+fw(400)
+				color: color-get($mau , den-4)
+				text-align: center
+			.boxzoom
+				display: flex
+				justify-content: center
+	.owl-carousel
+		.owl-item
+			img
+				width: auto
+		.owl-nav
+			button
+				&.owl-prev,&.owl-next
+					width: 2rem
+					height: 2rem
+				&:active,&:focus
+					background: color-get($mau , main)
+					color: color-get($mau , trang)
+
+	+media-breakpoint-up(lg)
+		.list-wrapper
+			+pad(3rem 2rem)
+			h3
+				text-align: left

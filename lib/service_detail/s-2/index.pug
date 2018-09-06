@@ -1,0 +1,14 @@
+section.canhcam-service-detail-2
+	article.service-list
+		.container
+			.list-wrapper
+				h3 Ưu điểm của bảo trì sữa chữa
+				.list-item.owl-carousel.owl-theme
+					- var index = 1
+					each val, key in ['Đảm bảo an toàn tuyệt đối và sự thoải mái cho người sử dụng thang máy.','Hạn chế việc ngừng hoạt động của thang do lỗi thiết bị gây ảnh hưởng đến việc di chuyển trong công trình.','Mang lại lợi ích kinh tế cho sự đầu tư của khách hàng' , 'Tăng tuổi thọ thiết bị trong thang máy.','Phát hiện và xử lý kịp thời mọi hỏng hóc, đảm bảo thang máy luôn trong trạng thái hoạt động tốt nhất.']
+						.item
+							figure
+								.boxzoom
+									img(src="./img/service/service_icon_"+ index++ +".png", alt="alt")
+								figcaption
+									p= val

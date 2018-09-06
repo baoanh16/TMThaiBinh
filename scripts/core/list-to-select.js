@@ -21,7 +21,7 @@ function listToSelect() {
 
 function selectChangeToList() {
 	if (CANHCAM_APP.ACTIVE_LIST_TO_SELECT) {
-		if ($(window).width() > CANHCAM_APP.CHANGE_GRID_SM) {
+		if ($(window).width() > CANHCAM_APP.CHANGE_GRID) {
 			$('[data-select-changed]').each(function () {
 				$(this).show().removeAttr('data-select-changed').attr('data-select', '');
 			})
@@ -34,7 +34,7 @@ function selectChangeToList() {
 
 $(document).ready(function () {
 	if (CANHCAM_APP.ACTIVE_LIST_TO_SELECT) {
-		if ($(window).width() <= CANHCAM_APP.CHANGE_GRID_SM) {
+		if ($(window).width() <= CANHCAM_APP.CHANGE_GRID) {
 			listToSelect()
 		}
 	}

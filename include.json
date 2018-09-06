@@ -6,10 +6,20 @@
                 "header/h-7",
                 "banner/b-1",
                 "breadcrumb/b-6",
-                "breadcrumb/b-1"
+                "breadcrumb/b-1",
+                "about/a-1",
+                "about/a-2",
+                "project/p-1",
+                "project/p-2",
+                "product/p-1",
+                "product/p-2",
+                "service_detail/s-1",
+                "service_detail/s-2",
+                "carousel/c-2"
             ],
             "body": [
-                "pagination/p-1"
+                "pagination/p-1",
+                "service/s-1"
             ],
             "footer": [
                 "footer/f-3"
@@ -58,7 +68,11 @@
         "news-detail": {
             "body": [
                 "nav/n-2",
-                "news-details/n-1"
+                "news-details/n-1",
+                "news-details/n-2",
+                "project_detail/p-1",
+                "project_detail/p-2",
+                "project_detail/p-3"
             ]
         }
     }

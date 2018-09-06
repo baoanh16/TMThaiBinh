@@ -1,0 +1,14 @@
+section.canhcam-project-detail-1
+	article.project-lists
+		.container
+			h1.tb-title.--orange Căn hộ cao cấp
+			.row
+				- var index = 1
+				each val, key in ['Chung cư VINACONEX','Khu căn hộ cao cấp VinHome','Khu căn hộ cao cấp Mỹ Đức','Khu căn hộ cao cấp Giai Việt' ]
+					.col-md-6.col-lg-4.item
+						a(href="project-details-2.html")
+							figure
+								.boxzoom
+									img(src="./img/project_detail/product_detail_"+ index++ +".png", alt="alt")
+								figcaption
+									h3= val
