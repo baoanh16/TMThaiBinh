@@ -1,0 +1,78 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-nav-4
+	padding-top: 2rem
+	padding-bottom: 3rem
+	.item
+		+pad(1rem)
+		.trigger-btn
+			text-decoration: none
+			display: block
+			// padding-bottom: 1.5rem
+			color: color-get($mau, xam-5)
+			+fz(1.5rem)
+			position: relative
+			&:after
+				content: '\f078'
+				font-family: 'Font Awesome 5 Free'
+				+fw(600)
+				+pos(abs, 0 0 null null)
+				color: color-get($mau, xam-5)
+				+transition(all .5s ease-in-out)
+			&.active
+				color: color-get($mau, main)
+				&:after
+					color: color-get($mau, main)
+					+transform(rotate(-180deg))
+	nav
+		display: none
+	ul.nav
+		// display: none
+		flex-direction: column
+		.nav-item
+			.nav-link
+				+pad(0)
+				padding-top: 1.5rem
+				color: color-get($mau, xam-5)
+				background: none
+				+fw(400)
+				+fz(1.07rem)
+				&.active,&:active,&:focus
+					color: color-get($mau, main)
+	+media-breakpoint-up(lg)
+		.item
+			+pad(0)
+			.trigger-btn
+				display: none
+		nav
+			display: block
+		ul.nav
+			flex-direction: row
+			.nav-item
+				+ .nav-item
+					position: relative
+					&:after
+						content: ''
+						width: 1px
+						height: 16px
+						background: color-get($mau , xam-8)
+						box-shadow: 0 0 1px rgba(0,0,0,.2)
+						+pos(abs, 50% null null 0)
+						transform: translateY(-50%)
+				.nav-link
+					+pad(.5rem 2rem)
+					&:hover
+						color: color-get($mau, main)
+				&:first-child
+					.nav-link
+						padding-left: 0
+				&:last-child
+					.nav-link
+						padding-right: 0
+	+media-breakpoint-up(xl)
+		.nav-item
+			.nav-link
+				+pad(null 3rem)

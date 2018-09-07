@@ -9,6 +9,9 @@
                 "breadcrumb/b-1",
                 "about/a-1",
                 "about/a-2",
+                "about/a-3",
+                "about/a-4",
+                "about/a-5",
                 "project/p-1",
                 "project/p-2",
                 "product/p-1",
@@ -62,6 +65,7 @@
         "news": {
             "body": [
                 "nav/n-1",
+                "nav/n-4",
                 "news/n-2"
             ]
         },

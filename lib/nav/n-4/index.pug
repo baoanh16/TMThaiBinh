@@ -1,0 +1,10 @@
+section.canhcam-nav-4
+	.container
+		.row
+			.col.item(bg-img="./img/nav-bg.png")
+				a.trigger-btn(href="javascript:void(0)", title="title") Danh mục
+				nav
+					ul.nav.justify-content-center.nav-pills
+						each val in ['Thông diệp lãnh đạo', 'Lịch sử hình thành', 'Tầm nhìn - Sứ mệnh', 'Thành tựu', 'Sơ đồ tổ chức']
+							li.nav-item
+								a.nav-link(href="javascript:void(0)")= val

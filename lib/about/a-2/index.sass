@@ -2,3 +2,106 @@
 //////////////////////////////////////
 // CODE
 //////////////////////////////////////
+
+
+.canhcam-about-2
+	+pad(2rem)
+	.about-list
+		h2
+			margin-bottom: 1.21rem
+		p
+			&.title-des
+				+fz(1.07rem)
+				+fw(400)
+				color: color-get($mau , xam-10)
+				margin-bottom: 1.43rem
+				text-align: center
+				// margin-bottom: 2.86rem
+		.content-list
+			.content
+				figure
+					img
+						width: 100%
+					figcaption
+						h3
+							+fz(5.14rem)
+							color: color-get($mau , main)
+							text-align: center
+						p
+							+fz(1.07rem)
+							+fw(400)
+							color: color-get($mau , trang)
+		.nav-list
+			.nav
+				position: relative
+				&:before
+					content: ''
+					display: block
+					width: 100%
+					height: 1px
+					background: color-get($mau , trang)
+					+pos(abs , 10px null null 0)
+				.owl-item
+					.item
+						padding-top: 2.5rem
+						h5
+							color: color-get($mau , trang)
+							+fz(1.07rem)
+							+fw(400)
+							position: relative
+							cursor: pointer
+							margin-bottom: 0
+							text-align: center
+							&:before
+								content: ''
+								display: block
+								width: 10px
+								height: 10px
+								background: color-get($mau , trang)
+								+pos(abs , -30px null null 50%)
+								+transform(translateX(-50%))
+					&.current
+						h5
+							color: color-get($mau , main)
+							&:before
+								background: color-get($mau , main)
+								+box-sha(0 0 0 3px rgba(245,130,31,.5))
+				.owl-nav
+					button
+						&.owl-prev , &.owl-next
+							width: 2rem
+							height: 2rem
+							background: color-rgba(color-get($mau , main),.5)
+							border-radius: 0
+							color: color-get($mau , trang)
+							&:active , &:focus
+								background: color-get($mau , main)
+
+
+
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+		.about-list
+			p
+				&.title-des
+					max-width: 81%
+					margin: 0 auto
+					margin-bottom: 2.86rem
+			.content-list
+				margin-bottom: 4.29rem
+				.content
+					figure
+						figcaption
+							h3,p
+								text-align: left
+			.nav-list
+				.nav
+					.owl-nav
+						button
+							&.owl-prev , &.owl-next
+								background: none
+								+transform(translateY(-50%))
+							&.owl-prev
+								+pos(abs, 14% null null -2rem)
+							&.owl-next
+								+pos(abs, 14% -2rem null null)

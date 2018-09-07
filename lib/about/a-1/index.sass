@@ -2,3 +2,50 @@
 //////////////////////////////////////
 // CODE
 //////////////////////////////////////
+
+
+.canhcam-about-1
+	padding-bottom: 4rem
+	.about-list
+		h2
+			margin-bottom: 1.86rem
+		.item
+			display: inline-flex
+			blockquote
+				padding-right: 1rem
+				em
+					+fz(2rem)
+					color: color-get($mau , main)
+			figure
+				width: 100%
+				margin-bottom: 2rem
+				.boxzoom
+					position: relative
+					&:after
+						content: ''
+						display: block
+						width: 100%
+						height: 100%
+						background: url('../img/striped_orange.png') repeat
+						// background-size: cover
+						+pos(abs , .71rem null null .71rem)
+						z-index: -1
+					img
+						width: 100%
+				figcaption
+					p
+						+fz(1.07rem)
+						+fw(400)
+						color: color-get($mau , xam-9)
+						&:last-child
+							color: color-get($mau , main)
+							+fz(1.43rem)
+	+media-breakpoint-up(lg)
+		.about-list
+			.item
+				blockquote
+					padding-right: 2.14rem
+					em
+						+fz(4.64rem)
+				figure
+					margin-bottom: 0
