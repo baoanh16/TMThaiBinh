@@ -5,6 +5,13 @@ section.canhcam-nav-4
 				a.trigger-btn(href="javascript:void(0)", title="title") Danh mục
 				nav
 					ul.nav.justify-content-center.nav-pills
-						each val in ['Thông diệp lãnh đạo', 'Lịch sử hình thành', 'Tầm nhìn - Sứ mệnh', 'Thành tựu', 'Sơ đồ tổ chức']
-							li.nav-item
-								a.nav-link(href="javascript:void(0)")= val
+						li.nav-item
+							a.nav-link.active(data-link="canhcam-about-1" href="javascript:void(0)") Thông diệp lãnh đạo
+						li.nav-item
+							a.nav-link(data-link="canhcam-about-2" href="javascript:void(0)") Lịch sử hình thành
+						li.nav-item
+							a.nav-link(data-link="canhcam-about-3" href="javascript:void(0)") Tầm nhìn - sứ mệnh
+						li.nav-item
+							a.nav-link(data-link="canhcam-about-4" href="javascript:void(0)") Thành tựu
+						li.nav-item
+							a.nav-link(data-link="canhcam-about-5" href="javascript:void(0)") Sơ đồ tổ chức

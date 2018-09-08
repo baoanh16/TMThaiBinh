@@ -2,3 +2,28 @@
 //////////////////////////////////////
 // CODE
 //////////////////////////////////////
+
+
+.canhcam-about-3
+	background-attachment: fixed
+	width: 100%
+	height: 100%
+	+pad(2rem 0)
+	.about-list
+		.item
+			figure
+				text-align: center
+				figcaption
+					h3
+						+fz(1.71rem)
+						+fw(400)
+						color: color-get($mau , den-4)
+						text-transform: uppercase
+					p
+						+fz(1.07rem)
+						+fw(400)
+						color: color-get($mau , xam-9)
+						+lh(1.71rem)
+						margin-bottom: 0
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)

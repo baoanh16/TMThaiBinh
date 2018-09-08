@@ -2,3 +2,111 @@
 //////////////////////////////////////
 // CODE
 //////////////////////////////////////
+
+.canhcam-about-4
+	+pad(2rem 0)
+	border-bottom: 1px solid color-get($mau , xam-7)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	a
+		text-decoration: none
+	.title
+		h2
+			margin-bottom: 1.43rem
+		p
+			+fz(1.07rem)
+			+fw(400)
+			color: color-get($mau , xam-9)
+			margin-bottom: 1rem
+			text-align: center
+	.owl-carousel
+		position: relative
+		// Main
+		.owl-stage-outer
+		// Nav
+		.owl-nav
+			button
+				&.owl-prev, &.owl-next
+					+pad(.5rem_)
+					width: 3rem
+					height: 3rem
+					background: darken(color-get($mau,trang),5%)
+					+bor-rad(0)
+					text-align: center
+					&:focus
+						outline: none
+				&:hover, &.active
+					&.owl-prev, &.owl-next
+						background: color-get($mau,main)
+			+media-breakpoint-up(md)
+				margin-top: 0
+				button
+					&.owl-prev, &.owl-next
+						margin: 0
+						+transform(translateY(-50%))
+						&:focus
+							outline: none
+					&.owl-prev
+						+pos(abs, 50% null null -4rem)
+					&.owl-next
+						+pos(abs, 50% -4rem null null)
+		// Dots
+		.owl-dots
+			.owl-dot
+				&:focus
+					outline: none
+				span
+					background: darken(color-get($mau,trang),5%)
+				&.active
+					span
+						background: color-get($mau,main)
+		// List
+		&.list-items
+			.item
+				figure
+					text-align: center
+					margin-bottom: 0
+					.boxzoom
+						display: flex
+						justify-content: center
+						+pad(1.79rem 2.86rem)
+						background: url(../img/striped_bg.jpg) repeat
+						img
+							width: auto
+					figcaption
+						padding-top: 1.5rem
+						h3
+							+fz(1.43rem)
+							+lh(1.43rem)
+							+fw(400)
+							color: color-get($mau , main)
+							margin-bottom: 1rem
+						p
+							+fz(1.07rem)
+							+fw(400)
+							color: color-get($mau , xam-11)
+							margin-bottom: 0
+				&:hover
+					img
+						+opacity(.8)
+					a
+						color: color-get($mau,den)
+	+media-breakpoint-up(lg)
+		.title
+			p
+				max-width: 81%
+				margin: 0 auto
+				margin-bottom: 2.86rem
+		.owl-carousel
+			.owl-nav
+				button
+					&.owl-prev, &.owl-next
+						background: none
+						+fz(2.57rem)
+						&:hover
+							background: none
+							color: color-get($mau , main)
+			&.list-items
+				.item
+					figure
+						text-align: left
