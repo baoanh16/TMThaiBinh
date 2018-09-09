@@ -1,0 +1,101 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-home-1
+	+pad(2rem 0)
+	.home-list
+		h2
+			margin-bottom: 1.57rem
+		.list-img
+			.item
+				position: relative
+				display: flex
+				justify-content: center
+				align-items: flex-end
+				min-height: 400px
+				h4
+					+fz(1.29rem)
+					+fw(400)
+					text-transform: uppercase
+					color: color-get($mau , main)
+					margin-bottom: 0
+					+pad(1rem 10.29rem)
+					background: color-rgba(color-get($mau , trang),.9)
+					white-space: nowrap
+			.owl-nav
+				button
+					&.owl-prev, &.owl-next
+						margin: 0
+						+transform(translateY(-50%))
+						width: 2rem
+						height: 2rem
+						+bor-rad(0)
+						+fz(2.57rem)
+						// background: color-get($mau , main)
+						color: color-get($mau , trang)
+						&:focus,&:active
+							outline: none
+						&:hover
+							color: color-get($mau , main)
+							background: none
+					&.owl-prev
+						+pos(abs, 50% null null 7rem)
+					&.owl-next
+						+pos(abs, 50% 7rem null null)
+		.list-content
+			background: url(../img/striped_bg_1.jpg) repeat
+			.owl-item
+				.item
+					display: flex
+					justify-content: center
+					+pad(1.5rem 0)
+					figure
+						margin-bottom: 0
+						img
+							width: auto
+						figcaption
+							h5
+								+fz(1.07rem)
+								color: color-get($mau , xam-12)
+								margin-bottom: 0
+								+fw(400)
+				&.current
+					.item
+						background: color-get($mau , main)
+						figure
+							img
+								filter: brightness(0) invert(1)
+								-webkit-filter: brightness(0) invert(1)
+							figcaption
+								h5
+									color: color-get($mau , trang)
+			.owl-nav
+				button
+					&.owl-prev, &.owl-next
+						margin: 0
+						+transform(translateY(-50%))
+						width: 2rem
+						height: 2rem
+						+bor-rad(0)
+						background: color-get($mau , main)
+						color: color-get($mau , trang)
+						&:focus,&:active
+							outline: none
+					&.owl-prev
+						+pos(abs, 50% null null 0)
+					&.owl-next
+						+pos(abs, 50% 0 null null)
+
+
+
+
+
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+		.home-list
+			.list-img
+				margin-bottom: 1.5rem
+				.item
+					min-height: 460px

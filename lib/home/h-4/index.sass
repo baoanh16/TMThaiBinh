@@ -1,0 +1,47 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+
+.canhcam-home-4
+	+pad(2rem 0)
+	position: relative
+	&:before
+		content: ''
+		display: block
+		width: 100%
+		height: 100%
+		background: color-rgba(color-get($mau , den),.7)
+		+pos(abs, 0 null null 0)
+	.title
+		text-align: center
+		h2
+			white-space: nowrap
+			text-align: center
+	.list-partner
+		.item
+			display: flex
+			justify-content: center
+			align-items: center
+			img
+				width: auto
+		.owl-nav
+			button
+				&.owl-prev , &.owl-next
+					width: 3rem
+					height: 3rem
+					color: color-get($mau , trang)
+					background: color-get($mau , main)
+					+bor-rad(0)
+					&:hover,&:actice,&:focus
+						background: color-get($mau , main)
+
+
+
+
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+		.title
+			text-align: left
+			h2
+				text-align: left

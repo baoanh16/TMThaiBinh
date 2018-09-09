@@ -1,0 +1,15 @@
+section.canhcam-home-2
+	article.project-lists
+		.container
+			.title
+				h3.sub-title Công trình tiêu biểu
+				h2.tb-title.--black.--title-left Thang máy Thái Bình
+			.row
+				each val, index in ['Cao ốc - Văn Phòng','Căn hộ cao cấp','Trung tâm thương mại','bệnh viện - Trường học','Nhà hàng - Khách sạn' , 'Nhà phố - Biệt thự','Khu phức hợp','Công trình khác']
+					.col-12.col-md-6.col-lg-3.item
+						a(href="project-details-1.html")
+							figure
+								.boxzoom
+									img(src="./img/home/home_project_"+ index +".png", alt="alt")
+								figcaption
+									h3= val
