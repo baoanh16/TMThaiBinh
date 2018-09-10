@@ -43,7 +43,7 @@
 				<div class="boxzoom">
 					<xsl:if test="count(NewsImages)>1">
 						<xsl:apply-templates select="/NewsLists/NewsImages">
-							<xsl:with-param name="position" select="position()"></xsl:with-param>
+							<!-- <xsl:with-param name="position" select="position()"></xsl:with-param> -->
 						</xsl:apply-templates>
 					</xsl:if>
 				</div>
@@ -52,21 +52,21 @@
 		<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
 	</xsl:template>
 
-	
+
 	<xsl:template match="NewsImages">
-		<xsl:param name="position"></xsl:param>
-		<xsl:if test="position() > 1">
+		<!-- <xsl:param name="position"></xsl:param>
+		<xsl:if test="position() > 1"> -->
 			<a>
 				<xsl:attribute name="href">
-					<xsl:value-of select="ImageUrl"/>
+					<xsl:value-of select="ImageUrl" />
 				</xsl:attribute>
 				<img class="img-fluid">
 					<xsl:attribute name="src">
-						<xsl:value-of select="ImageUrl"/>
+						<xsl:value-of select="ImageUrl" />
 					</xsl:attribute>
 				</img>
 			</a>
-		</xsl:if>
+		<!-- </xsl:if> -->
 	</xsl:template>
 
 </xsl:stylesheet>

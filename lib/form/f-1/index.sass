@@ -33,3 +33,40 @@
 				margin-bottom: 0
 				+fz(.9rem)
 				color: color-get($mau,do-1)
+	.wrap-form
+		> div
+			display: flex
+			flex-wrap: wrap
+			.form-group
+				width: 100%
+				+pad(null 15px)
+				input,textarea
+					display: block
+					width: 100%
+					height: calc(2.25rem + 2px)
+					padding: .375rem .75rem
+					font-size: 1rem
+					line-height: 1.5
+					color: #495057
+					background-color: #fff
+					background-clip: padding-box
+					border: 1px solid #ced4da
+					border-radius: .25rem
+					transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out
+				&.qparagraph
+					width: 100%
+					textarea
+						height: 150px
+		.form-group
+			&.frm-btnwrap
+				+pad(null 15px)
+				input[type="reset"]
+					display: none
+				input[type="submit"]
+					+pad(null 3rem)
+					background: color-get($mau , main)
+					color: color-get($mau , trang)
+		+media-breakpoint-up(lg)
+			> div
+				.form-group
+					width: 50%

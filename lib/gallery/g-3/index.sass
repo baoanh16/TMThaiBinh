@@ -4,192 +4,56 @@
 //////////////////////////////////////
 
 .canhcam-gallery-3
-	+pad(1rem 0 2rem 0)
-	+media-breakpoint-up(lg)
-		+pad(2rem 0 4rem 0)
-	.gallery-details
-		.card-columns
-			+media-breakpoint-up(sm)
-				column-count: 1
-			+media-breakpoint-up(md)
-				column-count: 3
+	padding-bottom: 2rem
+	.gallery-list
 		.item
-			text-decoration: none
-			height: 100%
-			overflow: hidden
-			cursor: pointer
-			.boxzoom
-				overflow: hidden
-				display: none
 			figure
-				overflow: hidden
-				margin-bottom: 30px
-				position: relative
-				&:before
-					content: ''
-					display: block
-					background: color-rgba(color-get($mau, main),.8)
-					width: 100%
-					height: 100%
-					position: absolute;
-					top: 0;
-					left: 0;
-					+transition(all .3s ease-in-out)
-					opacity: 0
-				img
-					+transition(all .3s ease-in-out)
-					width: 100%
-				figcaption
-					padding: 2rem
-					text-align: center
-					+transition(all .3s ease-in-out)
-					+opacity(0)
-					+pos(abs, 50% null null 50%)
-					+transform(translateX(-50%) translateY(-50%))
-					z-index: 100
-					width: 100%
-					h3
-						+text-sha(1px 1px 3px rgba(0,0,0,.4))
-						color: color-get($mau,trang)
-						+fz(18px)
-						+fw(400)
-						margin-bottom: 0
-			&:hover
-				figure
-					&:before
-						opacity: 1
-						z-index: 1
-					figcaption
-						+opacity(1)
-					img
-						+transform(scale(1.1))
-
-
-
-	&.canhcam-video-fixed-size.lg-outer
-		padding: 0
-		.lg-inner
-			background-color: #000
-		.lg-sub-html
-			position: absolute
-			text-align: left
-		.lg-toolbar
-			background-color: transparent
-			height: 0
-			.lg-icon
-				color: #FFF
-		.lg-img-wrap
-			padding: 0
-
-.lg-backdrop.in
-	background: rgba(255,255,255,.8)
-
-
-.canhcam-gallery-2
-	+pad(1rem 0 2rem 0)
-	+media-breakpoint-up(lg)
-		+pad(2rem 0 4rem 0)
-	.gallery-details
-		.item
-			display: flex
-			text-decoration: none
-			height: 100%
-			overflow: hidden
-			figure
-				overflow: hidden
-				margin-bottom: 30px
 				.boxzoom
-					overflow: hidden
+					img
+						width: 100%
+				.hidden
+					display: none
+				figcaption
+					padding-top: 1rem
+					h3
+						+fz(1.29rem)
+						+fw(400)
+						color: color-get($mau , den-4)
+						margin-bottom: 0
+	+media-breakpoint-up(lg)
+		padding-bottom: 2rem
+		.gallery-list
+			.item
+				cursor: pointer
+				figure
+					margin-bottom: 2.14rem
 					position: relative
-					&:after
-						content: ''
-						display: block
-						z-index: 1
-						background: rgba(0,0,0,.5)
+					.boxzoom
+						overflow: hidden
+						img
+							+transition(all .5s ease-in-out)
+					.hidden
+						display: none
+					figcaption
+						padding-top: 0
+						+pos(abs , 0 null null 0)
 						width: 100%
 						height: 100%
-						+pos(abs, 0 0 null null)
-					+media-breakpoint-up(sm)
-						max-height: 200px
-						min-height: 200px
-					.zoom-item
-						color: color-get($mau,trang)
-						+pos(abs, 50% null null 50%)
-						+transform(translateX(-50%) translateY(-50%))
-						z-index: 10
-						+fz(4rem)
-						+transition(all .3s ease-in-out)
-						.mdi-play-circle-outline
-							display: block
-						.mdi-play-circle
-							display: none
-					img
-						+transition(all .3s ease-in-out)
-						width: 100%
-				figcaption
-					padding: 1rem 0 0 0
-
-					h3
-						+fz(18px)
-						+fw(400)
-						color: color-get($mau,den)
-						margin-bottom: 0
-			&:hover
-				figure
+						background: color-rgba(color-get($mau , main),.5)
+						display: flex
+						justify-content: center
+						align-items: center
+						+transition(all .5s ease-in-out)
+						opacity: 0
+						h3
+							+fz(1.4rem)
+							color: color-get($mau , trang)
+							text-align: center
+							+text-sha(1px 1px 3px rgba(0, 0, 0, 0))
+							+pad(1.5rem)
+				&:hover
 					.boxzoom
-						&:after
-							z-index: -1
 						img
-							+transform(scale(1.1))
-						.zoom-item
-							+text-sha(1px 1px 3px rgba(0,0,0,.4))
-							.mdi-play-circle-outline
-								display: none
-							.mdi-play-circle
-								display: block
-
-
-	&.canhcam-video-fixed-size.lg-outer
-		padding: 0
-		.lg-inner
-			background-color: #000
-		.lg-sub-html
-			position: absolute
-			text-align: left
-		.lg-toolbar
-			background-color: transparent
-			height: 0
-			.lg-icon
-				color: #FFF
-		.lg-img-wrap
-			padding: 0
-
-.lg-backdrop.in
-	background: rgba(255,255,255,.8)
-
-
-.gallery-tab
-	justify-content: center
-	margin-top: 2rem
-	+media-breakpoint-up(lg)
-		margin-top: 4rem
-	.container
-		background: color-rgba(color-get($mau,den),.1)
-	.nav-item
-		.nav-link
-			+pad(.5rem .75rem)
-			color: color-get($mau, den)
-			background: none
-			+fz(16px)
-			&.active, &:hover
-				color: color-get($mau, main)
-		+ .nav-item
-			position: relative
-			&:after
-				content: ''
-				width: 1px 
-				height: 16px
-				background: black
-				box-shadow: 0 0 1px rgba(0,0,0,.2)
-				+pos(abs, 50% null null 0)
-				transform: translateY(-50%)
+							+transform(scale(1.2))
+					figcaption
+						opacity: 1
