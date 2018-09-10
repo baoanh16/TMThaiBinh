@@ -5,7 +5,7 @@
 
 
 	<xsl:template match="/">
-		<section class="canhcam-news-2">
+		<section class="canhcam-news-2 pt-0">
 			<article class="container">
 				<h2 class="tb-title">
 					<xsl:value-of select="/NewsList/ModuleTitle"></xsl:value-of>

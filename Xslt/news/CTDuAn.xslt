@@ -7,10 +7,10 @@
 
 
 
-		<section class="canhcam-project-detail-1">
+		<section class="canhcam-project-detail-2">
 			<article class="project-lists">
 				<div class="container">
-					<h1 class="tb-title --orange">
+					<h1 class="tb-title --orange --title-left">
 						<xsl:value-of select="/NewsDetail/Title" disable-output-escaping="yes"></xsl:value-of>
 					</h1>
 					<div class="row">
@@ -20,7 +20,11 @@
 							</div>
 						</div>
 						<div class="col-lg-4">
-							<xsl:value-of select="/NewsDetail/FullContent" disable-output-escaping="yes"></xsl:value-of>
+							<div class="list-content">
+								<div class="content">
+									<xsl:value-of select="/NewsDetail/FullContent" disable-output-escaping="yes"></xsl:value-of>
+								</div>
+							</div>
 						</div>
 
 					</div>
@@ -106,7 +110,7 @@
 					<div class="boxzoom">
 						<img class="img-fluid">
 						<xsl:attribute name="src">
-							<xsl:value-of select="ThumbnailUrl"></xsl:value-of>
+							<xsl:value-of select="ImageUrl"></xsl:value-of>
 						</xsl:attribute>
 						<xsl:attribute name="alt">
 							<xsl:value-of select="Title"></xsl:value-of>
