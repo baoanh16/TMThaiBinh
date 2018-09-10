@@ -19,7 +19,11 @@
                 "product/p-2",
                 "service_detail/s-1",
                 "service_detail/s-2",
-                "carousel/c-2"
+                "carousel/c-2",
+                "home/h-1",
+                "home/h-2",
+                "home/h-3",
+                "home/h-4"
             ],
             "body": [
                 "pagination/p-1",

@@ -3,11 +3,11 @@
 // CODE
 //////////////////////////////////////
 
-.canhcam-breadcrumb-1,.canhcam-breadcrumb-6,.canhcam-breadcrumb-7
+.canhcam-breadcrumb-1,.canhcam-breadcrumb-6
 	position: relative
 	.main-breadcrumb
 		position: absolute
-		bottom: 0
+		bottom: -1px
 		left: 0
 		width: 100%
 		display: none
@@ -15,50 +15,57 @@
 		+media-breakpoint-up(md)
 			display: block
 		.breadcrumb
-			background: white
-			margin-right: -30px
+			background: none
+			// margin-right: -30px
 			margin-bottom: 0
 			+bor-rad(0)
 			+pad(0)
+			padding-left: 15px
 			position: relative
 			&:before
 				content: ''
 				display: block
 				min-width: 1000px
 				height: 50px
-				+pos(abs, 0 100% null null)
+				+pos(abs, 0 98% null null)
 				background: white
-			.breadcrumb-item
-				+pad(8px)
+
+			li
+				+pad(0.57rem)
 				position: relative
 				height: 50px
+				background: color-get($mau , trang)
 				display: flex
 				align-items: center
+				a
+					text-decoration: none
 				&:first-child
 					padding-left: 0
 					padding-right: 0
 					a
-						+fz(18px)
+						+fz(1.29rem)
 						color: #999999
-				+ .breadcrumb-item
+				+ li
 					a
-						+fz(16px)
+						+fz(1.14rem)
 					&:before
 						color: #999999
 						content: '\e876'
 						font-family: 'Linearicons-Free'
 						line-height: 1
 						overflow: hidden
+						padding-right: 0.57rem
 				&:last-child
-					+fz(16px)
+					+fz(1.14rem)
 					&:after
 						content: ''
 						display: inline-block
-						width: 0
-						height: 0
+						width: 550px
+						height: 100%
 						// border-bottom: 2.5rem solid color-get($mau,main)
 						// border-right: 2.5rem solid transparent
-						+pos(abs, 0 -2.5rem null null)
+						+pos(abs, 0 null null 100%)
+						background: color-get($mau , trang)
 
 	.owl-carousel
 		position: relative

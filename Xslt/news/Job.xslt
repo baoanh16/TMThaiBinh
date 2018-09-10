@@ -44,7 +44,7 @@
 			</xsl:when>
 
 
-			<xsl:when test="position()=3">
+			<!-- <xsl:when test="position()=3">
 				<section class="canhcam-boxes-11">
 					<div class="container">
 						<h2 class="tb-title">
@@ -73,7 +73,7 @@
 						</div>
 					</div>
 				</section>
-			</xsl:when>
+			</xsl:when> -->
 		</xsl:choose>
 	</xsl:template>
 
@@ -272,7 +272,7 @@
 	</xsl:template>
 
 
-	<xsl:template match="News" mode="ZoneNews3">
+	<!-- <xsl:template match="News" mode="ZoneNews3">
 		<tr>
 			<td>
 				<a>
@@ -292,6 +292,6 @@
 				<xsl:value-of select="CreatedDate" disable-output-escaping="yes"></xsl:value-of>
 			</td>
 		</tr>
-	</xsl:template>
+	</xsl:template> -->
 
 </xsl:stylesheet>

@@ -4,21 +4,69 @@
 //////////////////////////////////////
 
 .canhcam-breadcrumb-7
+	.title
+		padding-bottom: 10rem
+		h2
+			color: color-get($mau , trang)
+			text-transform: uppercase
+			+fz(2.14rem)
+			+fw(400)
+			margin-bottom: 1rem
 	.owl-carousel
 		.owl-stage-outer
 			.item
 				min-height: 480px
+				display: flex
+				justify-content: center
+				align-items: flex-end
+				text-align: center
 				+media-breakpoint-up(md)
 					min-height: 520px
 				+media-breakpoint-up(lg)
 					min-height: 630px
 		.owl-nav
 			opacity: 1
-			+pos(abs , null null 0 'calc(100% - 35.4%)')
-			z-index: 9
 			button
 				&.owl-prev, &.owl-next
-					position: static
+					width: 3rem
+					height: 3rem
 					+bor-rad(0)
 					background: color-get($mau , den)
-					+transform(inherit)
+					margin: 0
+					+transform(translateY(-50%))
+					&:focus,&:active
+						outline: none
+						background: color-get($mau , main)
+				&.owl-prev
+					+pos(abs, 50% null null 0)
+				&.owl-next
+					+pos(abs, 50% 0 null null)
+		.owl-dots
+			+pos(abs , null null 2rem 50%)
+			+transform(translateX(-50%))
+			.owl-dot
+				outline: none
+				&.active,&:active,&:focus
+					span
+						background: color-get($mau , main)
+						+box-sha(0 0 0 2px rgba(245,130,31,.5))
+	+media-breakpoint-up(lg)
+		.owl-carousel
+			.owl-nav
+				+pos(abs , null null 0 60%)
+				&:before
+					content: ''
+					width: 2000px
+					height: 100%
+					background: color-get($mau , trang)
+					+pos(abs , 1px 100% null null)
+				button
+					&.owl-prev, &.owl-next
+						width: 5.36rem
+						height: 3.57rem
+						position: static
+						background: color-get($mau , den)
+						+transform(inherit)
+						+fz(2rem)
+						&:hover
+							background: color-get($mau , main)

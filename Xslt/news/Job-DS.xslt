@@ -8,7 +8,7 @@
 		<section class="canhcam-boxes-11">
 			<div class="container">
 				<h2 class="tb-title">
-					<xsl:value-of select="ModuleTitle"></xsl:value-of>
+					<xsl:value-of select="/NewsList/ModuleTitle"></xsl:value-of>
 				</h2>
 			</div>
 			<div class="container">

@@ -354,6 +354,7 @@ header
 .tb-title
 	+fz(2.86rem)
 	+fw(400)
+	+lh(2.86rem)
 	// text-transform: uppercase
 	text-align: center
 	margin-bottom: 40px
@@ -375,6 +376,9 @@ header
 	text-transform: uppercase
 	+fz(1.43rem)
 	+fw(400)
+	margin-bottom: .3rem
+	&.--white
+		color: color-get($mau , trang)
 
 
 
@@ -391,3 +395,39 @@ header
 			+transform(scale(1.2))
 		h3
 			color: color-get($mau , main)
+
+
+.btn-view
+	background: color-get($mau ,main)
+	+pad(0)
+	color: color-get($mau ,trang)!important
+	+bor-rad(0)
+	text-transform: uppercase
+	position: relative
+	width: 150px
+	height: 50px
+	+lh(45px)
+	border: none
+	+fz(1.14rem)
+	// +transition(all .5s ease-in-out)
+	svg ,rect
+		+pos(abs , 0 null null 0)
+		width: 100%
+		height: 100%
+		fill: transparent
+	svg
+		rect
+			stroke: color-get($mau ,main)
+			stroke-width: 4
+			+transition(all .7s ease-in-out)
+			stroke-dasharray: 500 , 500
+			stroke-dashoffset: 0
+	+media-breakpoint-up(lg)
+		&:hover
+			background: none
+			color: color-get($mau ,trang)!important
+			svg
+				rect
+					stroke-dasharray: 100 , 400
+					stroke-dashoffset: 275
+					stroke: color-get($mau ,main)

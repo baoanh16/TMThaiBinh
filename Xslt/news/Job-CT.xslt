@@ -17,6 +17,7 @@
 						</div>
 						<p>
 							<a class="btn download btn-lg" href="#">
+								<xsl:value-of select="/NewsList/Download" />
 								<i class="fa fa-download"></i>
 							</a>
 						</p>
