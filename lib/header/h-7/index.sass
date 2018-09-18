@@ -5,11 +5,26 @@
 
 .canhcam-header-7
 	background: color-get($mau,trang)
-	border-bottom: 1px solid darken(color-get($mau,trang),20%)
+	// border-bottom: 1px solid darken(color-get($mau,trang),20%)
 	#phone,#des,#globe
 		padding-left: 2rem
 		color: color-get($mau , trang)
-		+fz(1rem)
+		a
+			color: color-get($mau , trang)
+			+fz(1rem)
+	.social
+		padding-left: 2rem
+		display: flex
+		align-items: center
+		list-style-type: none
+		// padding-left: 0
+		+mar(0)
+		li
+			margin-right: 1rem
+			&:last-child
+				margin-right: 0
+			a
+				color: color-get($mau , trang)
 	.navbar
 		align-items: center
 		.title
@@ -53,17 +68,7 @@
 			margin-bottom: 0
 			span
 				color: color-get($mau , main)
-		.social
-			display: flex
-			align-items: center
-			justify-content: center
-			list-style-type: none
-			padding-left: 0
-			+mar(0)
-			li
-				margin-right: 1rem
-				&:last-child
-					margin-right: 0
+
 
 		.phone
 			span , a
@@ -120,6 +125,30 @@
 				+pad(0 2rem)
 				.input-group
 					width: 100%
+					.searchbox
+						display: flex
+						align-items: center
+						input
+							border: none
+							outline: none
+							padding-left: .5rem
+							height: 2.71rem
+						button
+							+fz(0)
+							background: color-get($mau , main)
+							border: none
+							outline: none
+							width: 2.71rem
+							height: 2.71rem
+							position: relative
+							&:before
+								content: '\f002'
+								font-family: 'Font Awesome 5 Free'
+								+fw(600)
+								+fz(1rem)
+								color: color-get($mau , trang)
+								+pos(abs , 50% null null 50%)
+								+transform(translate(-50%,-50%))
 				button
 					background: darken(color-get($mau,trang),5%)
 					color: color-get($mau,main)
@@ -228,6 +257,26 @@
 			+bor-rad(0)
 			.input-group
 				width: 100%
+				.searchbox
+					input
+						border: none
+						outline: none
+					button
+						+fz(0)
+						background: color-get($mau , main)
+						border: none
+						outline: none
+						width: 2.71rem
+						height: 2.71rem
+						position: relative
+						&:before
+							content: '\f002'
+							font-family: 'Font Awesome 5 Free'
+							+fw(600)
+							+fz(1rem)
+							color: color-get($mau , trang)
+							+pos(abs , 50% null null 50%)
+							+transform(translate(-50%,-50%))
 
 			&.active
 				display: block
@@ -253,6 +302,15 @@
 				.fa-search
 					display: none
 	+media-breakpoint-up(lg)
+		.social
+			justify-content: center
+			padding-left: 0
+			li
+				a
+					color: color-get($mau , xam-3)
+				&:hover
+					a
+						color: color-get($mau , main)
 		.navbar
 			.navbar-brand
 				img

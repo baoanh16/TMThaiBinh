@@ -123,4 +123,16 @@
   <data name="Download" xml:space="preserve">
     <value>Tải về</value>
   </data>
+  <data name="ProductService" xml:space="preserve">
+    <value>Sản phẩm - Dịch vụ</value>
+  </data>
+  <data name="Construction" xml:space="preserve">
+    <value>Công trình tiêu biểu</value>
+  </data>
+   <data name="Opportunity" xml:space="preserve">
+    <value>Cơ hội</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>Sản phẩm khác</value>
+  </data>
 </root>

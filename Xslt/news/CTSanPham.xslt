@@ -55,7 +55,8 @@
 						<div class="col-lg-3">
 							<div class="othernews" data-fix="92" data-fix-type="initial" data-fix-change="sticky">
 								<h2>
-									<xsl:value-of select="/NewsDetail/NewsOtherText"></xsl:value-of>
+									<xsl:value-of select="/NewsDetail/Product" />
+									<!-- <xsl:value-of select="/NewsDetail/ProductOtherText"></xsl:value-of> -->
 								</h2>
 								<hr>
 								</hr>

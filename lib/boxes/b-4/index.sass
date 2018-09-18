@@ -3,6 +3,30 @@
 	+pad(2rem 0)
 	+media-breakpoint-up(lg)
 		+pad(4rem 0)
+	// .form_desc
+	// 	select
+	// 		display: inline-block
+	// 		width: 100%
+	// 		height: calc(2.25rem + 2px)
+	// 		padding: .375rem 1.75rem .375rem .75rem
+	// 		line-height: 1.5
+	// 		color: #495057
+	// 		vertical-align: middle
+	// 		background: #fff url(data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' v…0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E) no-repeat right .75rem center
+	// 		background-size: 8px 10px
+	// 		border: 1px solid #ced4da
+	// 		border-radius: .25rem
+	// 		-webkit-appearance: none
+	// 		-moz-appearance: none
+	// 		appearance: none
+	.filtermap
+		.form_desc
+			padding-left: 1rem
+	.findmap-wrap
+		min-height: 500px
+		// padding-left: 1rem
+	#map , #map_canvas
+		height: 100%
 	.col-lg-3
 		margin-top: 30px
 	.maps
@@ -15,23 +39,33 @@
 		margin-left: -8px
 		max-height: 600px
 		overflow-y: scroll
-	.address-item
+		&::-webkit-scrollbar-track
+			background: #e5e5e5
+		&::-webkit-scrollbar-thumb
+			background: color-get($mau,main)
+		&::-webkit-scrollbar
+			width: 5px
+	.clinic_list
 		+pad(1rem)
 		height: 100%
 		position: relative
 		cursor: pointer
-		h4
-			+fz(20pxrem)
-			+fw(500)
-		p
+		.number
+			display: none
+		div
 			+fz(16px)
 			margin-bottom: .5rem
-			&:nth-child(2)
+			div
 				&:before
 					display: inline-block
 					font: normal normal normal 24px/1 "Material Design Icons"
 					content: '\f34e'
 					text-rendering: auto
+			div
+
+		strong
+			+fz(20px)
+			+fw(500)
 		&:before
 			opacity: 0
 			content: ''
@@ -44,15 +78,15 @@
 			border-right: 8px solid color-get($mau, main)
 			border-top: 8px solid transparent
 			border-bottom: 8px solid transparent
-		+ .address-item
+		+ .clinic_list
 			border-top: 1px solid color-rgba(color-get($mau, den), .1)
-		&.active, 
+		&.active,
 		&:hover
 			background: color-get($mau, main)
-			h4, p
+			div
 				color: color-get($mau, trang)
-			p:nth-child(2)
-				&:before
-					color: color-get($mau, trang)
+			// p:nth-child(2)
+			// 	&:before
+			// 		color: color-get($mau, trang)
 			&:before
 				opacity: 1

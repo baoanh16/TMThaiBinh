@@ -30,7 +30,7 @@
 			</xsl:attribute>
 			<div class="title">
 				<h2>
-					<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+					<xsl:value-of select="Description" disable-output-escaping="yes"></xsl:value-of>
 				</h2>
 				<a class="btn btn-view">
 					<xsl:attribute name="href">

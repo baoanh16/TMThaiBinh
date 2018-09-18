@@ -123,4 +123,16 @@
   <data name="Download" xml:space="preserve">
     <value>Download</value>
   </data>
+  <data name="ProductService" xml:space="preserve">
+    <value>Product - Service</value>
+  </data>
+  <data name="Construction" xml:space="preserve">
+    <value>Typical projects</value>
+  </data>
+  <data name="Opportunity" xml:space="preserve">
+    <value>Opportunity</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>Other products</value>
+  </data>
 </root>

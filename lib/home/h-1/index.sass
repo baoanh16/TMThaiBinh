@@ -41,9 +41,15 @@
 							color: color-get($mau , main)
 							background: none
 					&.owl-prev
-						+pos(abs, 50% null null 7rem)
+						+pos(abs, 50% null null 0)
 					&.owl-next
-						+pos(abs, 50% 7rem null null)
+						+pos(abs, 50% 0 null null)
+				+media-breakpoint-up(lg)
+					button
+						&.owl-prev
+							left: 7rem
+						&.owl-next
+							right: 7rem
 		.list-content
 			background: url(../img/striped_bg_1.jpg) repeat
 			.owl-item
@@ -53,16 +59,22 @@
 					+pad(1.5rem 0)
 					figure
 						margin-bottom: 0
+						display: flex
+						align-items: center
+						justify-content: center
+						flex-direction: column
+						+transition(all .4s ease-in-out)
 						img
 							width: auto
+							+transition(all .2s ease-in-out)
 						figcaption
 							h5
 								+fz(1.07rem)
 								color: color-get($mau , xam-12)
 								margin-bottom: 0
 								+fw(400)
-				&.current
-					.item
+								+transition(all .4s ease-in-out)
+					&:hover
 						background: color-get($mau , main)
 						figure
 							img

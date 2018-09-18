@@ -64,9 +64,23 @@
 					display: none
 				input[type="submit"]
 					+pad(null 3rem)
-					background: color-get($mau , main)
-					color: color-get($mau , trang)
+					background: none
+					color: color-get($mau , main)
+					+box-sha(0 0 0 1px color-get($mau , main))
+					&:active,&:focus
+						background: color-get($mau , main)
+						color: color-get($mau , trang)
+
 		+media-breakpoint-up(lg)
 			> div
 				.form-group
 					width: 50%
+			.form-group
+				&.frm-btnwrap
+					display: flex
+					justify-content: center
+					align-items: center
+					input[type="submit"]
+						&:hover
+							background: color-get($mau , main)
+							color: color-get($mau , trang)
