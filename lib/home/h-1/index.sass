@@ -14,16 +14,21 @@
 				display: flex
 				justify-content: center
 				align-items: flex-end
-				min-height: 400px
+				// min-height: 400px
+				position: relative
 				h4
 					+fz(1.29rem)
 					+fw(400)
 					text-transform: uppercase
 					color: color-get($mau , main)
 					margin-bottom: 0
-					+pad(1rem 10.29rem)
+					+pad(1rem null)
 					background: color-rgba(color-get($mau , trang),.9)
 					white-space: nowrap
+					+pos(abs , null null 0 50%)
+					+transform(translateX(-50%))
+					width: 50%
+					text-align: center
 			.owl-nav
 				button
 					&.owl-prev, &.owl-next

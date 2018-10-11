@@ -28,7 +28,14 @@
 <portal:SearchResultsDisplaySettings runat="server"
 	PageId="3"
 	/>
-
+    <portal:DealerDisplaySettings runat="server"
+	ShowDescription="true"
+	ShowFax="true"
+	ShowWebsite="true"
+	ShowDistrict="true"
+	ShowContactPerson="true"
+	ShowEmail="true"
+	/>
 <portal:LayoutDisplaySettings runat="server"
     LeftSideNoRightSideCss="col-left"
     RightSideNoLeftSideCss="col-sm-3 right-content rightside right2column"

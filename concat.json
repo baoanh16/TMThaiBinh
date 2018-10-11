@@ -11,14 +11,10 @@
             "node_modules/jquery/dist/jquery.js",
             "node_modules/popper.js/dist/umd/popper.js",
             "node_modules/bootstrap/dist/js/bootstrap.js",
-            "bower_components/swiper/dist/js/swiper.min.js",
-            "plugins/sliderrevolution/examples/rs-plugin/js/jquery.themepunch.plugins.min.js",
-            "plugins/sliderrevolution/examples/rs-plugin/js/jquery.themepunch.revolution.min.js",
             "bower_components/k-responsive-menu/dist/js/k-responsive-menu.min.js",
             "bower_components/moment/min/moment.min.js",
             "bower_components/offline/offline.min.js",
-            "bower_components/lodash/dist/lodash.min.js",
-            "bower_components/fancybox/dist/jquery.fancybox.min.js"
+            "bower_components/lodash/dist/lodash.min.js"
         ],
         "css_core": [
             "bower_components/k-responsive-menu/dist/css/k-responsive-menu.min.css",
@@ -31,8 +27,7 @@
             "node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-brands.css",
             "node_modules/@fortawesome/fontawesome-free-webfonts/css/fontawesome.css",
             "bower_components/mdi/css/materialdesignicons.min.css",
-            "bower_components/linearicons/dist/web-font/style.css",
-            "bower_components/fancybox/dist/jquery.fancybox.min.css"
+            "bower_components/linearicons/dist/web-font/style.css"
         ],
         "js": [
             "bower_components/owl.carousel/dist/owl.carousel.min.js",
@@ -46,13 +41,12 @@
             "bower_components/elevatezoom/jquery.elevatezoom.js",
             "bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js",
             "bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js",
-            "bower_components/freewall/freewall.js"
+            "bower_components/jquery.scrollTo/jquery.scrollTo.min.js"
         ],
         "css": [
             "bower_components/select2/dist/css/select2.min.css",
             "bower_components/lightgallery/dist/css/lightgallery.min.css",
             "bower_components/lightgallery/dist/css/lg-transitions.min.css",
-            "node_modules/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css",
             "bower_components/slick-carousel/slick/slick.css",
             "bower_components/jquery.scrollbar/jquery.scrollbar.css",
             "bower_components/slick-carousel/slick/slick-theme.css",

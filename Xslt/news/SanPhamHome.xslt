@@ -12,8 +12,8 @@
 
 	<!--Begin News Child-->
 	<xsl:template match="News">
-		<a class="item" bg-img="./img/home/home_slide_1.png">
-			<xsl:attribute name="href">
+		<a class="item">
+			<!-- <xsl:attribute name="href">
 				<xsl:value-of select="Url"></xsl:value-of>
 			</xsl:attribute>
 			<xsl:attribute name="title">
@@ -21,7 +21,20 @@
 			</xsl:attribute>
 			<xsl:attribute name="bg-img">
 				<xsl:value-of select="ImageUrl"></xsl:value-of>
-			</xsl:attribute>
+			</xsl:attribute> -->
+			<div class="boxzoom">
+				<img class="img-fluid">
+				<xsl:attribute name="src">
+					<xsl:value-of select="ImageUrl"></xsl:value-of>
+				</xsl:attribute>
+				<xsl:attribute name="alt">
+					<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+				</xsl:attribute>
+				<xsl:attribute name="title">
+					<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+				</xsl:attribute>
+				</img>
+			</div>
 			<h4>
 				<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
 			</h4>

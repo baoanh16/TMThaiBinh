@@ -5,7 +5,7 @@
 
 
 	<xsl:template match="/">
-		<section class="canhcam-boxes-11">
+		<section class="canhcam-boxes-11" id="zone-135">
 			<div class="container">
 				<h2 class="tb-title">
 					<xsl:value-of select="/NewsList/ModuleTitle"></xsl:value-of>
@@ -20,8 +20,8 @@
 									<tr>
 										<th scope="col">Vị trí</th>
 										<th scope="col">Địa điểm</th>
-										<th scope="col">Thời gian</th>
-										<th scope="col">Ngày</th>
+										<th scope="col" class="hidden">Thời gian</th>
+										<th scope="col" class="hidden">Ngày</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -48,10 +48,10 @@
 			<td>
 				<xsl:value-of select="SubTitle" disable-output-escaping="yes"></xsl:value-of>
 			</td>
-			<td>
+			<td class="hidden">
 				<xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
 			</td>
-			<td>
+			<td class="hidden">
 				<xsl:value-of select="CreatedDate" disable-output-escaping="yes"></xsl:value-of>
 			</td>
 		</tr>

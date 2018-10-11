@@ -367,12 +367,12 @@ header
 
 
 .tb-title
-	+fz(2.86rem)
+	+fz(2rem)
 	+fw(400)
-	+lh(2.86rem)
+	+lh(2rem)
 	// text-transform: uppercase
 	text-align: center
-	margin-bottom: 40px
+	margin-bottom: 20px
 	color: color-get($mau, main)
 	&.--black
 		color: color-get($mau , den)
@@ -386,6 +386,10 @@ header
 		text-transform: uppercase
 	&.--title-small
 		+fz(2.14rem)
+	+media-breakpoint-up(lg)
+		+fz(2.86rem)
+		+lh(2.86rem)
+		margin-bottom: 40px
 .sub-title
 	color: color-get($mau , xam-5)
 	text-transform: uppercase
@@ -417,13 +421,12 @@ header
 	+pad(0)
 	color: color-get($mau ,trang)!important
 	+bor-rad(0)
-	text-transform: uppercase
 	position: relative
-	width: 150px
-	height: 50px
-	+lh(45px)
+	width: 100px
+	height: 25px
+	+lh(25px)
 	border: none
-	+fz(1.14rem)
+	+fz(1rem)
 	// +transition(all .5s ease-in-out)
 	svg ,rect
 		+pos(abs , 0 null null 0)
@@ -438,6 +441,11 @@ header
 			stroke-dasharray: 500 , 500
 			stroke-dashoffset: 0
 	+media-breakpoint-up(lg)
+		width: 150px
+		height: 50px
+		+lh(50px)
+		text-transform: uppercase
+		+fz(1.14rem)
 		&:hover
 			background: none
 			color: color-get($mau ,trang)!important
@@ -446,3 +454,84 @@ header
 					stroke-dasharray: 100 , 400
 					stroke-dashoffset: 275
 					stroke: color-get($mau ,main)
+.ccnews
+	.canhcam-job-form
+		display: none
+.cc
+	.tm-form
+		display: none
+	// .canhcam-job-form
+	// 	display: none
+.job
+	.canhcam-job-form
+		display: none
+.canhcam-job-form
+	.wrap-form
+		+pad(1.2rem)
+		+box-sha(0 0 0 1px color-get($mau , main))
+		// +bor-rad(10px)
+		> div
+			h2
+				width: 100%
+				+pad(null 15px)
+				+fz(1.2rem)
+				+fw(600)
+				color: color-get($mau , main)
+			.form-group
+				+pad(null 15px)
+				input
+					display: block
+					width: 100%
+					padding: 0.375rem 0.75rem
+					font-size: 1rem
+					line-height: 1.5
+					color: #495057
+					background-color: #fff
+					background-clip: padding-box
+					border: 1px solid #ced4da
+					border-radius: 0.25rem
+					-webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
+					-webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
+					transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
+					transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
+					transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
+				// &:nth-child(1)
+				// 	padding-left: 0
+				// &:nth-child(2)
+				// 	padding-right: 0
+		.qparagraph
+			textarea
+				display: block
+				width: 100%
+				padding: 0.375rem 0.75rem
+				font-size: 1rem
+				line-height: 1.5
+				color: #495057
+				background-color: #fff
+				background-clip: padding-box
+				border: 1px solid #ced4da
+				border-radius: 0.25rem
+				-webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
+				-webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
+				transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
+				transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
+				transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
+		.frm-btnwrap
+			+pad(null 15px)
+			input[type="reset"]
+				display: none
+			input[type="submit"]
+				padding-top: 0.4rem
+				padding-right: 3rem
+				padding-bottom: 0.4rem
+				padding-left: 3rem
+				// +bor-rad(20px)
+				cursor: pointer
+				background: color-get($mau , main)
+				color: color-get($mau , trang)
+		+media-breakpoint-up(lg)
+			.pnlQuestions
+				display: flex
+				flex-wrap: wrap
+				.form-group
+					width: 50%

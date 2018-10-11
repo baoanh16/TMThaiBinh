@@ -49,8 +49,12 @@ header.canhcam-header-7
 							a.nav-link(href='project.html') Dự án
 						li.nav-item
 							a.nav-link(href='#') Truyền thông
-						li.nav-item
-							a.nav-link(href='job.html') Tuyển dụng
+						li.nav-item.dropdown
+							a#itemMenuDropdown-8.nav-link.dropdown-toggle.active(dropdown-type='hover', role='button', aria-haspopup='true', aria-expanded='false', href='#', target='_self') Tuyển Dụng
+							.dropdown-menu.dropdown-arrow(style='display: none;')
+								a.dropdown-item(aria-labelledby='itemMenuDropdown-1', href='/job.html#zone-130', target='_self') Chính sách nhân sự
+								a.dropdown-item(aria-labelledby='itemMenuDropdown-2', href='/job.html#zone-135', target='_self') Vị trí tuyển dụng
+
 						li.nav-item
 							a.nav-link(href='contact.html') Liên hệ
 					.my-2.my-md-0.btnsearch.d-none.d-md-block

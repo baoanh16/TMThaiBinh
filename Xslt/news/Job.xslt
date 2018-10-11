@@ -13,7 +13,11 @@
 		<xsl:choose>
 
 			<xsl:when test="position()=1">
-				<section class="canhcam-boxes-2">
+				<section class="canhcam-boxes-2 pb-0">
+					<xsl:attribute name="id">
+						<xsl:text>zone-</xsl:text>
+						<xsl:value-of select="ZoneId" />
+					</xsl:attribute>
 					<div class="container">
 						<h2 class="tb-title">
 							<xsl:value-of select="Title"></xsl:value-of>
@@ -27,7 +31,11 @@
 
 
 			<xsl:when test="position()=2">
-				<section class="canhcam-boxes-3">
+				<section class="canhcam-boxes-3 pb-0">
+					<xsl:attribute name="id">
+						<xsl:text>zone-</xsl:text>
+						<xsl:value-of select="ZoneId" />
+					</xsl:attribute>
 					<article class="job-list">
 						<div class="container">
 							<div class="row">
@@ -37,18 +45,16 @@
 									</h2>
 								</div>
 							</div>
-							<xsl:apply-templates select="News" mode="ZoneNews2"></xsl:apply-templates>
+							<div class="row info top-part">
+								<xsl:apply-templates select="News" mode="ZoneNews2"></xsl:apply-templates>
+							</div>
 						</div>
 					</article>
 				</section>
 			</xsl:when>
 
 
-
 			<!-- <xsl:when test="position()=3">
-
-			<xsl:when test="position()=3">
-
 				<section class="canhcam-boxes-11">
 					<div class="container">
 						<h2 class="tb-title">
@@ -78,9 +84,6 @@
 					</div>
 				</section>
 			</xsl:when> -->
-
-			</xsl:when>
-
 		</xsl:choose>
 	</xsl:template>
 
@@ -143,12 +146,32 @@
 
 
 	<xsl:template match="News" mode="ZoneNews2">
-		<xsl:choose>
+		<div class="col-md-6 col-lg-4 part-list">
+			<div class="item">
+				<div class="item-top">
+					<img>
+					<xsl:attribute name="src">
+						<xsl:value-of select="ImageUrl"></xsl:value-of>
+					</xsl:attribute>
+					</img>
+					<span>
+						<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+					</span>
+				</div>
+				<div class="item-bottom">
+					<h4>
+						<xsl:value-of select="SubTitle" disable-output-escaping="yes"></xsl:value-of>
+					</h4>
+					<xsl:value-of select="FullContent" disable-output-escaping="yes"></xsl:value-of>
+				</div>
+			</div>
+		</div>
+		<!-- <xsl:choose>
 			<xsl:when test="position() = 1">
 				<xsl:text disable-output-escaping="yes">
 					&lt;div class="row info top-part"&gt;
 				</xsl:text>
-				<div class="col-md-6 part-list">
+				<div class="col-md-4 part-list">
 					<div class="item">
 						<div class="item-top">
 							<img>
@@ -171,7 +194,7 @@
 				</div>
 			</xsl:when>
 			<xsl:when test="position() = 2">
-				<div class="col-md-6 part-list">
+				<div class="col-md-4 part-list">
 					<div class="item">
 						<div class="item-top">
 							<img>
@@ -275,13 +298,11 @@
 					&lt;/div &gt;
 				</xsl:text>
 			</xsl:when>
-		</xsl:choose>
+		</xsl:choose> -->
 	</xsl:template>
 
 
-
 	<!-- <xsl:template match="News" mode="ZoneNews3">
-
 		<tr>
 			<td>
 				<a>
@@ -302,8 +323,5 @@
 			</td>
 		</tr>
 	</xsl:template> -->
-
-	</xsl:template>
-
 
 </xsl:stylesheet>

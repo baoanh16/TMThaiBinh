@@ -20,13 +20,13 @@
 	<!-- Item -->
 	<xsl:template match="Banner">
 		<div class="item">
-			<xsl:attribute name="bg-img">
+			<!-- <xsl:attribute name="bg-img">
 				<xsl:value-of select="ImageUrl"></xsl:value-of>
-			</xsl:attribute>
-			<xsl:attribute name="alt">
+			</xsl:attribute> -->
+			<!-- <xsl:attribute name="alt">
 				<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
-			</xsl:attribute>
-			<!-- <img class="w-100">
+			</xsl:attribute> -->
+			<img class="w-100">
 				<xsl:attribute name="src">
 					<xsl:value-of select="ImageUrl"></xsl:value-of>
 				</xsl:attribute>
@@ -36,7 +36,7 @@
 				<xsl:attribute name="title">
 					<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
 				</xsl:attribute>
-			</img> -->
+			</img>
 		</div>
 	</xsl:template>
 </xsl:stylesheet>

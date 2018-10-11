@@ -52,6 +52,8 @@ Facebook: https://fb.com/canhcam.vn
 	<meta name="format-detection" content="telephone=no">
 	<meta name="msapplication-tap-highlight" content="no">
 	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file://-->
 	<!--if lt IE 9
@@ -164,10 +166,10 @@ script(src='//oss.maxcdn.com/respond/1.4.2/respond.min.js')
 							<div class="col-md-4 address text-center text-md-left col-lg-2">
 								<portal:ModuleWrapper ID="mdl143" runat="server" ConfigureModuleId="143" />
 							</div>
-							<div class="col-md-4 col-lg-3 offset-lg-1">
+							<div class="col-6 col-md-4 col-lg-3 offset-lg-1">
 								<portal:ModuleWrapper ID="mdl200" runat="server" ConfigureModuleId="200" />
 							</div>
-							<div class="col-md-4 col-lg-3">
+							<div class="col-6 col-md-4 col-lg-3">
 								<portal:ModuleWrapper ID="mdl148" runat="server" ConfigureModuleId="148" />
 							</div>
 							<div class="col-md-12 col-lg-3 subscribe">

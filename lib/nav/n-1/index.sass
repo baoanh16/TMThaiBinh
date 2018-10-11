@@ -20,13 +20,14 @@
 		+ .nav-item
 			position: relative
 			&:after
-				content: ''
-				width: 1px
-				height: 16px
-				background: color-get($mau , xam-8)
-				box-shadow: 0 0 1px rgba(0,0,0,.2)
-				+pos(abs, 50% null null 0)
-				transform: translateY(-50%)
+				+media-breakpoint-up(lg)
+					content: ''
+					width: 1px
+					height: 16px
+					background: color-get($mau , xam-8)
+					box-shadow: 0 0 1px rgba(0,0,0,.2)
+					+pos(abs, 50% null null 0)
+					transform: translateY(-50%)
 		&:first-child
 			.nav-link
 				padding-left: 0

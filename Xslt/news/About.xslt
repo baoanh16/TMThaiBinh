@@ -91,6 +91,7 @@
 					<div class="container">
 						<h2 class="tb-title --white">
 							<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+
 						</h2>
 						<p class="title-des">
 							<xsl:value-of select="Description" disable-output-escaping="yes"></xsl:value-of>

@@ -30,7 +30,8 @@
 					+pad(.5rem_)
 					width: 3rem
 					height: 3rem
-					background: darken(color-get($mau,trang),5%)
+					background: color-rgba(color-get($mau,main),.5)
+					color: color-get($mau,trang)
 					+bor-rad(0)
 					text-align: center
 					&:focus
@@ -47,9 +48,9 @@
 						&:focus
 							outline: none
 					&.owl-prev
-						+pos(abs, 50% null null -4rem)
+						+pos(abs, 50% null null 0)
 					&.owl-next
-						+pos(abs, 50% -4rem null null)
+						+pos(abs, 50% 0 null null)
 		// Dots
 		.owl-dots
 			.owl-dot
@@ -102,10 +103,15 @@
 				button
 					&.owl-prev, &.owl-next
 						background: none
-						+fz(2.57rem)
+						+fz(2rem)
+						background: color-rgba(color-get($mau,main),.5)
+						color: color-get($mau , trang)
+						display: flex
+						justify-content: center
+						align-items: center
+						top: 40%
 						&:hover
-							background: none
-							color: color-get($mau , main)
+							background: color-rgba(color-get($mau,main),1)
 			&.list-items
 				.item
 					figure

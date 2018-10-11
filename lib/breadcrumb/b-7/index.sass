@@ -8,22 +8,34 @@
 		padding-bottom: 10rem
 		h2
 			color: color-get($mau , trang)
-			text-transform: uppercase
-			+fz(2.14rem)
+			+fz(1rem)
 			+fw(400)
 			margin-bottom: 1rem
+			position: relative
+			+media-breakpoint-up(md)
+				+fz(2.14rem)
+				text-transform: uppercase
 	.owl-carousel
 		.owl-stage-outer
 			.item
-				min-height: 480px
+				// min-height: 480px
 				display: flex
 				justify-content: center
 				align-items: flex-end
 				text-align: center
-				+media-breakpoint-up(md)
-					min-height: 520px
-				+media-breakpoint-up(lg)
-					min-height: 630px
+				position: relative
+				// +media-breakpoint-up(md)
+				// 	min-height: 520px
+				// +media-breakpoint-up(lg)
+				// 	min-height: 630px
+				// .boxzoom
+				// 	+pos(abs , 0 null null 0)
+				.title
+					+pos(abs , null null 1rem 50%)
+					+transform(translateX(-50%))
+					padding-bottom: 0
+					+media-breakpoint-up(lg)
+						bottom: 8rem
 		.owl-nav
 			opacity: 1
 			button

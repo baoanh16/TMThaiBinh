@@ -55,7 +55,7 @@
 
 	<xsl:template match="NewsImages">
 		<xsl:param name="position"></xsl:param>
-		<xsl:if test="position() > 1">
+		<xsl:if test="position() &gt;= 1">
 			<a>
 				<xsl:attribute name="href">
 					<xsl:value-of select="ImageUrl"></xsl:value-of>

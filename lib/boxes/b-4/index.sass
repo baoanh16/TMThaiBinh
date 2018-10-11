@@ -27,6 +27,9 @@
 		// padding-left: 1rem
 	#map , #map_canvas
 		height: 100%
+	#map_canvas
+		+media-breakpoint-down(md)
+			height: 500px
 	.col-lg-3
 		margin-top: 30px
 	.maps
@@ -55,13 +58,12 @@
 		div
 			+fz(16px)
 			margin-bottom: .5rem
-			div
+			.address
 				&:before
 					display: inline-block
 					font: normal normal normal 24px/1 "Material Design Icons"
 					content: '\f34e'
 					text-rendering: auto
-			div
 
 		strong
 			+fz(20px)

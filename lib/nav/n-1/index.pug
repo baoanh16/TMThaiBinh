@@ -1,13 +1,15 @@
 section.canhcam-nav-1
 	.container
 		.row
-			.col
-				ul.nav.justify-content-center.nav-pills(data-select bg-img="./img/nav-bg.png")
-					li.nav-item
-						a.nav-link.active(href='#') Tin hoạt động Pacific
-					li.nav-item
-						a.nav-link(href='#') Tin trong ngành
-					li.nav-item
-						a.nav-link(href='#') Tin khác
-					li.nav-item
-						a.nav-link(href='#') Brochure
+			.col.item(bg-img="./img/nav-bg.png")
+				a.trigger-btn(href="javascript:void(0)", title="title") Danh mục
+				nav
+					ul.nav.justify-content-center.nav-pills
+						li.nav-item
+							a.nav-link.active(href='#') Tin hoạt động Pacific
+						li.nav-item
+							a.nav-link(href='#') Tin trong ngành
+						li.nav-item
+							a.nav-link(href='#') Tin khác
+						li.nav-item
+							a.nav-link(href='#') Brochure

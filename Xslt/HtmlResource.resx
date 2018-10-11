@@ -135,4 +135,13 @@
   <data name="Product" xml:space="preserve">
     <value>Other products</value>
   </data>
+  <data name="OtherProjectsText" xml:space="preserve">
+    <value>Other Projects</value>
+  </data>
+  <data name="ApplyNow" xml:space="preserve">
+    <value>Apply now</value>
+  </data>
+  <data name="OtherJob" xml:space="preserve">
+    <value>Other Jobs</value>
+  </data>
 </root>

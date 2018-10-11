@@ -16,16 +16,19 @@
 							<xsl:value-of select="/NewsDetail/FullContent" disable-output-escaping="yes"></xsl:value-of>
 						</div>
 						<p>
-							<a class="btn download btn-lg" href="#">
-								<xsl:value-of select="/NewsList/Download" />
+							<a class="btn download btn-lg" href="#" id="tm-download">
+								<xsl:value-of select="/NewsDetail/ApplyNow" />
 								<i class="fa fa-download"></i>
 							</a>
 						</p>
+						<div id="tm-form">
+
+						</div>
 					</div>
 					<div class="col-lg-3 other">
 						<div class="other-text" data-fix="92" data-fix-type="initial" data-fix-change="sticky">
 							<h2>
-								Tin tuyển dụng khác
+								<xsl:value-of select="/NewsDetail/OtherJob" />
 							</h2>
 							<div class="lists">
 								<xsl:apply-templates select="/NewsDetail/NewsOther"></xsl:apply-templates>

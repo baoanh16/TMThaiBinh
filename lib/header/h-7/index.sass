@@ -6,6 +6,13 @@
 .canhcam-header-7
 	background: color-get($mau,trang)
 	// border-bottom: 1px solid darken(color-get($mau,trang),20%)
+	.dropdown
+		.dropdown-menu
+			&.dropdown-arrow
+				+media-breakpoint-down(md)
+					&:after,&:before
+						top: 24px
+						left: 11px
 	#phone,#des,#globe
 		padding-left: 2rem
 		color: color-get($mau , trang)

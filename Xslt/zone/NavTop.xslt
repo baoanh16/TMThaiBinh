@@ -14,10 +14,13 @@
 		<section class="canhcam-nav-3">
 			<div class="container">
 				<div class="row">
-					<div class="col">
-						<ul class="nav justify-content-center nav-pills" data-select="" bg-img="/Data/Sites/1/media/nav-bg.png">
-							<xsl:apply-templates select="Zone" mode="ZoneLi"></xsl:apply-templates>
-						</ul>
+					<div class="col item" bg-img="/Data/Sites/1/media/nav-bg.png">
+						<a class="trigger-btn" href="javascript:void(0)" title="title">Danh mục</a>
+						<nav>
+							<ul class="nav justify-content-center nav-pills" >
+								<xsl:apply-templates select="Zone" mode="ZoneLi"></xsl:apply-templates>
+							</ul>
+						</nav>
 					</div>
 				</div>
 			</div>

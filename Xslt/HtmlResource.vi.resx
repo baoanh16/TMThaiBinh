@@ -135,4 +135,13 @@
   <data name="Product" xml:space="preserve">
     <value>Sản phẩm khác</value>
   </data>
+  <data name="OtherProjectsText" xml:space="preserve">
+    <value>Dự án khác</value>
+  </data>
+  <data name="ApplyNow" xml:space="preserve">
+    <value>Ứng tuyển ngay</value>
+  </data>
+  <data name="OtherJob" xml:space="preserve">
+    <value>Tin tuyển dụng khác</value>
+  </data>
 </root>
