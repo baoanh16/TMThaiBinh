@@ -1,0 +1,97 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+.canhcam-contact-1
+	+pad(2rem null)
+	.contact-lists
+		h1
+			margin-bottom: rem(45px)
+		.info
+			background: color-get($mau,main)
+			+pad(rem(26px))
+			margin-bottom: 1rem
+			img
+				margin-bottom: rem(35px)
+			h2
+				+fz(rem(25px))
+				+fw(500)
+				color: color-get($mau,trang)
+				margin-bottom: rem(23px)
+			ul
+				padding-left: 0
+				margin-bottom: 0
+				list-style-type: none
+				li , a
+					color: color-get($mau,trang)
+					+fz(rem(15px))
+					margin-bottom: 1rem
+					em
+						margin-right: 1rem
+					&:last-child
+						margin-bottom: 0
+		.wrap-form
+			> div
+				.form-group
+					label
+						+fz(rem(16px))
+						color: #333333
+						+fw(500)
+					input , textarea
+						display: block
+						width: 100%
+						height: rem(52px)
+						padding: .375rem .75rem
+						font-size: 1rem
+						line-height: 1.5
+						color: #333333
+						background-color: #f2f2f2
+						background-clip: padding-box
+						border: none
+						border-radius: 0
+						-webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out
+						transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out
+						transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out
+						transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out
+						&:focus
+							outline: none
+							+box-sha(inset 0 0 0 1px color-get($mau,main))
+					&.qparagraph
+						textarea
+							height: rem(141px)
+			.frm-btnwrap
+				+mar(null -15px)
+				margin-bottom: 0
+				.frm-btn
+					+pad(null 15px)
+					input[type="reset"]
+						display: none
+					input[type="submit"]
+						+fz(rem(15px))
+						+fw(400)
+						+pad(.5rem 3rem)
+						color: color-get($mau,trang)
+						border: none
+						background: color-get($mau,main)
+						+bor-rad(0)
+						&:focus
+							outline: none
+	+media-breakpoint-up(lg)
+		+pad(4rem null)
+		.contact-lists
+			.info
+				margin-bottom: 0
+		.wrap-form
+			> div
+				display: flex
+				flex-wrap: wrap
+				+mar(null -15px)
+				.form-group
+					width: 50%
+					+pad(null 15px)
+					&.qparagraph
+						width: 100%
+			.frm-btnwrap
+				.frm-btn
+					input[type="submit"]
+						cursor: pointer
