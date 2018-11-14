@@ -41,7 +41,8 @@
             "bower_components/elevatezoom/jquery.elevatezoom.js",
             "bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js",
             "bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js",
-            "bower_components/jquery.scrollTo/jquery.scrollTo.min.js"
+            "bower_components/jquery.scrollTo/jquery.scrollTo.min.js",
+            "bower_components/matchHeight/dist/jquery.matchHeight-min.js"
         ],
         "css": [
             "bower_components/select2/dist/css/select2.min.css",
