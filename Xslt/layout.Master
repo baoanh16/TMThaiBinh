@@ -109,6 +109,10 @@ script(src='//oss.maxcdn.com/respond/1.4.2/respond.min.js')
 									<portal:ModuleWrapper ID="mdl139" runat="server" ConfigureModuleId="139" />
 									<!-- <span>0917.00.14.14</span> -->
 								</div>
+								<div class="ccinfo line" k-menu-map-to="#ccinfo">
+									<portal:ModuleWrapper ID="mdl214" runat="server" ConfigureModuleId="214" />
+									<!-- <span>0917.00.14.14</span> -->
+								</div>
 								<div class="des line" k-menu-map-to="#des">
 									<portal:ModuleWrapper ID="mdl140" runat="server" ConfigureModuleId="140" />
 									<!-- <p>Bảo trì sửa chữa:<span>1900 54 54 32</span></p> -->
@@ -135,6 +139,7 @@ script(src='//oss.maxcdn.com/respond/1.4.2/respond.min.js')
 							</div>
 						</div>
 						<div id="phone"></div>
+						<div id="ccinfo"></div>
 						<div id="des"></div>
 						<div id="globe"></div>
 						<div id="social"></div>
@@ -198,8 +203,8 @@ script(src='//oss.maxcdn.com/respond/1.4.2/respond.min.js')
 			</footer>
 		</div>
 		<!-- ////////////// End Footer ////////////// -->
-		<portal:AutoHidePanel ID="ah1" CssClass="cmsadminpanel" runat="server">
-			<div class="row">
+		<portal:AutoHidePanel ID="ah1" CssClass="cmsadminpanel w-100" runat="server">
+			<div class="row justify-content-start">
 				<div class="col-lg-12">
 					<nav>
 						<ul class="canhcamcmslistmenu listmenu">

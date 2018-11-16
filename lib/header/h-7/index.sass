@@ -13,7 +13,7 @@
 					&:after,&:before
 						top: 24px
 						left: 11px
-	#phone,#des,#globe
+	#phone,#des,#globe,#ccinfo
 		padding-left: 2rem
 		color: color-get($mau , trang)
 		a
@@ -77,7 +77,7 @@
 				color: color-get($mau , main)
 
 
-		.phone
+		.phone , .ccinfo
 			span , a
 				color: color-get($mau , main)
 				// +fz(1.29rem)
@@ -86,6 +86,10 @@
 					display: inline-block
 					font-family: 'Material Design Icons'
 					margin-right: .3rem
+		.ccinfo
+			a
+				&:before
+					display: none
 	.language
 		+pad(0 1rem 0 0)
 		button
@@ -187,7 +191,7 @@
 			&.active
 				+box-sha()
 		.wrap-top-menu
-			.phone
+			.phone , .ccinfo
 				span , a
 					+fz(.9rem)
 		.navbar
@@ -238,7 +242,7 @@
 					background: color-get($mau , xam-6)
 					+pos(abs , 50% 0 null null)
 					+transform(translateY(-50%))
-			.phone
+			.phone , .ccinfo
 				span , a
 					+fz(1.29rem)
 		&.fixedheader
