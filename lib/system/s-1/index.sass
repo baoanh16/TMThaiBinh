@@ -30,7 +30,7 @@
 				padding-left: 0
 				margin-bottom: 0
 				list-style-type: none
-				li
+				li , a
 					color: #333333
 					+fz(1rem)
 					+fw(500)
@@ -41,12 +41,14 @@
 						margin-right: 1rem
 					&:last-child
 						margin-bottom: 0
+					a
+						text-decoration: none
 			&.active , &:hover
 				background: color-get($mau,main)
 				h2
 					color: color-get($mau,trang)
 				ul
-					li
+					li , a
 						color: color-get($mau,trang)
 						.lnr
 							color: color-get($mau,trang)

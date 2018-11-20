@@ -13,13 +13,13 @@
 	<!--Begin News Child-->
 	<xsl:template match="News">
 		<a class="item">
-			<!-- <xsl:attribute name="href">
+			<xsl:attribute name="href">
 				<xsl:value-of select="Url"></xsl:value-of>
 			</xsl:attribute>
 			<xsl:attribute name="title">
 				<xsl:value-of select="Title"></xsl:value-of>
 			</xsl:attribute>
-			<xsl:attribute name="bg-img">
+			<!-- <xsl:attribute name="bg-img">
 				<xsl:value-of select="ImageUrl"></xsl:value-of>
 			</xsl:attribute> -->
 			<div class="boxzoom">
