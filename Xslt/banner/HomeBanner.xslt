@@ -22,13 +22,16 @@
 	<!-- Item -->
 	<xsl:template match="Banner">
 		<div class="item">
-			<!-- <xsl:attribute name="bg-img">
+			<xsl:attribute name="bg-img-responsive-xs">
+				<xsl:value-of select="ThumbnailUrl"></xsl:value-of>
+			</xsl:attribute>
+			<xsl:attribute name="bg-img-responsive">
 				<xsl:value-of select="ImageUrl"></xsl:value-of>
 			</xsl:attribute>
 			<xsl:attribute name="alt">
 				<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
-			</xsl:attribute> -->
-			<div class="boxzoom">
+			</xsl:attribute>
+			<!-- <div class="boxzoom">
 				<img class="img-fluid">
 					<xsl:attribute name="src">
 						<xsl:value-of select="ImageUrl"></xsl:value-of>
@@ -40,7 +43,7 @@
 						<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
 					</xsl:attribute>
 				</img>
-			</div>
+			</div> -->
 
 			<div class="title">
 				<h2>

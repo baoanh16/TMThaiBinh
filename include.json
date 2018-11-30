@@ -25,7 +25,9 @@
                 "home/h-3",
                 "home/h-4",
                 "contact/c-1",
-                "system/s-1"
+                "system/s-1",
+                "brochure/b-1",
+                "catalogue/c-1"
             ],
             "body": [
                 "pagination/p-1",

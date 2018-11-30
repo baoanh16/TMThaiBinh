@@ -13,13 +13,14 @@
 <portal:BannerDisplaySettings runat="server"
 	ShowDescription="true"
     DescriptionControlType="editor"
-    ShowThumbnail="false"
+    ShowThumbnail="true"
     ThumbnailWidth="100"
     ImageWidth="150"
 	/>
 <portal:NewsDisplaySettings runat="server"
 	ShowAttribute="true"
 	ShowSubTitle="true"
+    ShowAttachment="true"
 	/>
 <portal:SharedFilesDisplaySettings runat="server"
 	ShowFolder="false"

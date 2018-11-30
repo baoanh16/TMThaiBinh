@@ -1,0 +1,42 @@
+@import ../../_includes
+//////////////////////////////////////
+// CODE
+//////////////////////////////////////
+.canhcam-catalogue-1
+	padding-bottom: 2rem
+	.catalogues-list
+		.wrap-download
+			+pad(1rem null)
+			&:nth-child(odd)
+				background: #f5f5f5
+			&:nth-child(event)
+				background: #e5e5e5
+			a
+				text-decoration: none
+				color: #333333
+				+transition(all .3s ease-in-out)
+				&:focus , &:hover , &:active
+					color: color-get($mau,main)
+			.download-title
+				a
+					+fz(1.1rem)
+					&:before
+						content: '\f019'
+						font-family: 'Font Awesome 5 Free'
+						+fw(600)
+						+fz(1.2rem)
+						margin-right: 1rem
+			.download-group
+				display: flex
+				a
+					+pad(null .5rem)
+					display: block
+					&:first-child
+						+box-sha(1px 0 0 0 #333333)
+	+media-breakpoint-down(sm)
+		.wrap-download
+			text-align: center
+			.download-title
+				margin-bottom: .8rem
+	+media-breakpoint-up(lg)
+		padding-bottom: 4rem

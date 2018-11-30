@@ -1,0 +1,14 @@
+extends _layout/layout.pug
+block variables
+	- var title = "catalogue"
+	- var description = "Description for catalogue page"
+	- var bodyclass = "catalogue"
+	- var href = "/catalogue.html"
+block header
+	include ../lib/header/h-7/index.pug
+block body
+	include ../lib/breadcrumb/b-2/index.pug
+	include ../lib/nav/n-1/index.pug
+	include ../lib/catalogue/c-1/index.pug
+block footer
+	include ../lib/footer/f-3/index.pug
