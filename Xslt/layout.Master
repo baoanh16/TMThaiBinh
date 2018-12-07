@@ -109,10 +109,6 @@ script(src='//oss.maxcdn.com/respond/1.4.2/respond.min.js')
 									<portal:ModuleWrapper ID="mdl139" runat="server" ConfigureModuleId="139" />
 									<!-- <span>0917.00.14.14</span> -->
 								</div>
-								<div class="ccinfo line" k-menu-map-to="#ccinfo">
-									<portal:ModuleWrapper ID="mdl214" runat="server" ConfigureModuleId="214" />
-									<!-- <span>0917.00.14.14</span> -->
-								</div>
 								<div class="des line" k-menu-map-to="#des">
 									<portal:ModuleWrapper ID="mdl140" runat="server" ConfigureModuleId="140" />
 									<!-- <p>Bảo trì sửa chữa:<span>1900 54 54 32</span></p> -->
