@@ -8,7 +8,7 @@
 		padding-bottom: 10rem
 		h2
 			color: color-get($mau , trang)
-			+fz(1rem)
+			+fz(1.5rem)
 			+fw(400)
 			margin-bottom: 1rem
 			position: relative
@@ -31,29 +31,32 @@
 				// .boxzoom
 				// 	+pos(abs , 0 null null 0)
 				.title
-					+pos(abs , null null 1rem 50%)
-					+transform(translateX(-50%))
-					padding-bottom: 0
+					// +pos(abs , null null 1rem 50%)
+					// +transform(translateX(-50%))
+					+pad(null .5rem)
+					padding-bottom: 3rem
 					+media-breakpoint-up(lg)
-						bottom: 8rem
+						padding-bottom: 8rem
 		.owl-nav
 			opacity: 1
 			button
 				&.owl-prev, &.owl-next
 					width: 3rem
 					height: 3rem
-					+bor-rad(0)
+					+bor-rad(50%)
 					background: color-get($mau , den)
 					margin: 0
 					+transform(translateY(-50%))
 					color: color-get($mau , trang)
+					position: absolute
+					top: 50%
 					&:focus,&:active
 						outline: none
 						background: color-get($mau , main)
 				&.owl-prev
-					+pos(abs, 50% null null 0)
+					left: 2rem
 				&.owl-next
-					+pos(abs, 50% 0 null null)
+					right: 2rem
 		.owl-dots
 			+pos(abs , null null 2rem 50%)
 			+transform(translateX(-50%))
@@ -66,20 +69,8 @@
 	+media-breakpoint-up(lg)
 		.owl-carousel
 			.owl-nav
-				+pos(abs , null null 0 60%)
-				&:before
-					content: ''
-					width: 2000px
-					height: 100%
-					background: color-get($mau , trang)
-					+pos(abs , 1px 100% null null)
-				button
-					&.owl-prev, &.owl-next
-						width: 5.36rem
-						height: 3.57rem
-						position: static
-						background: color-get($mau , den)
-						+transform(inherit)
-						+fz(2rem)
-						&:hover
-							background: color-get($mau , main)
+				opacity: 0
+				transition: all .3s ease-in-out
+			&:hover
+				.owl-nav
+					opacity: 1

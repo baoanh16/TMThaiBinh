@@ -31,13 +31,23 @@
 		.owl-nav
 			button
 				&.owl-prev , &.owl-next
-					width: 3rem
-					height: 3rem
+					// width: 3rem
+					// height: 3rem
 					color: color-get($mau , trang)
-					background: color-get($mau , main)
+					background: none
+					font-size: 1.2rem
+					position: absolute
+					top: 50%
+					transform: translateY(-50%)
 					+bor-rad(0)
 					&:hover,&:actice,&:focus
-						background: color-get($mau , main)
+						background: none
+						outline: none
+						color: color-get($mau,main)
+				&.owl-prev
+					left: 0
+				&.owl-next
+					right: 0
 
 
 

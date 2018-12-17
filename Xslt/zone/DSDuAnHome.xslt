@@ -7,9 +7,9 @@
 			<article class="project-lists">
 				<div class="container">
 					<div class="title">
-						<h3 class="sub-title">
+						<!-- <h3 class="sub-title">
 							<xsl:value-of select="/ZoneList/Construction" />
-						</h3>
+						</h3> -->
 						<h2 class="tb-title --black --title-left">
 							<xsl:value-of select="/ZoneList/ModuleTitle"></xsl:value-of>
 						</h2>
