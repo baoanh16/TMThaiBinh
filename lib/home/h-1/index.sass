@@ -9,26 +9,41 @@
 		h2
 			margin-bottom: 1.57rem
 		.list-img
-			.item
-				position: relative
-				display: flex
-				justify-content: center
-				align-items: flex-end
-				// min-height: 400px
-				position: relative
-				h4
-					+fz(1.29rem)
-					+fw(400)
-					text-transform: uppercase
-					color: color-get($mau , main)
-					margin-bottom: 0
-					+pad(1rem null)
-					background: color-rgba(color-get($mau , trang),.9)
-					white-space: nowrap
-					+pos(abs , null null 0 50%)
-					+transform(translateX(-50%))
-					width: 50%
-					text-align: center
+			.owl-item
+				.item
+					position: relative
+					display: flex
+					justify-content: center
+					align-items: flex-end
+					// min-height: 400px
+					position: relative
+					h4
+						+fz(1.29rem)
+						+fw(400)
+						text-transform: uppercase
+						color: color-get($mau , main)
+						margin-bottom: 0
+						+pad(1rem null)
+						background: color-rgba(color-get($mau , trang),.9)
+						white-space: nowrap
+						+pos(abs , null null 0 50%)
+						+transform(translateX(-50%))
+						width: 50%
+						text-align: center
+				.boxzoom
+					position: relative
+					&:before
+						content: ''
+						display: block
+						width: 100%
+						height: 100%
+						background: rgb(241, 241, 241)
+						+pos(abs , 0 null null 0)
+						+transition(all .3s ease-in-out)
+				&.center
+					.boxzoom
+						&:before
+							content: none
 			.owl-nav
 				button
 					&.owl-prev, &.owl-next
@@ -39,7 +54,7 @@
 						+bor-rad(0)
 						+fz(2.57rem)
 						// background: color-get($mau , main)
-						color: color-get($mau , trang)
+						color: color-get($mau , main)
 						&:focus,&:active
 							outline: none
 						&:hover

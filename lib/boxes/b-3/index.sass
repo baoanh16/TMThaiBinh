@@ -22,16 +22,23 @@
 				.item-top
 					display: flex
 					justify-content: space-between
-					align-items: center
+					align-items: baseline
+					flex-direction: row-reverse
+					// margin-bottom: 1.3rem
 					span
-						color: color-get($mau , main)
-						+fz(4.2rem)
-						+fw(500)
-				.item-bottom
-					h4
-						+fz(1.1rem)
+						// +fz(4.2rem)
+						// +fw(500)
+						+fz(1.3rem)
 						+fw(700)
 						text-transform: uppercase
+					h4
+						color: color-get($mau , main)
+						+fz(1.4rem)
+						+fw(700)
+						text-transform: uppercase
+				.item-bottom
+					p
+						text-align: justify
 			&.top-part
 				// +media-breakpoint-up(lg)
 				// 	+pad(0 10rem)

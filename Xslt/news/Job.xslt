@@ -154,14 +154,17 @@
 						<xsl:value-of select="ImageUrl"></xsl:value-of>
 					</xsl:attribute>
 					</img>
-					<span>
+					<!-- <span>
 						<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
-					</span>
-				</div>
-				<div class="item-bottom">
+					</span> -->
 					<h4>
 						<xsl:value-of select="SubTitle" disable-output-escaping="yes"></xsl:value-of>
 					</h4>
+				</div>
+				<div class="item-bottom">
+					<!-- <h4>
+						<xsl:value-of select="SubTitle" disable-output-escaping="yes"></xsl:value-of>
+					</h4> -->
 					<xsl:value-of select="FullContent" disable-output-escaping="yes"></xsl:value-of>
 				</div>
 			</div>

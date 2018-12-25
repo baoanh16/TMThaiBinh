@@ -192,6 +192,32 @@
 
 			</section>
 		</xsl:if>
+		<xsl:if test="position() = 6 ">
+			<section>
+				<!--Match Id-->
+				<xsl:attribute name="id">
+					<xsl:text>canhcam-about-</xsl:text>
+					<xsl:value-of select="position()" />
+				</xsl:attribute>
+				<xsl:attribute name="class">
+					<xsl:text>canhcam-about-</xsl:text>
+					<xsl:value-of select="position()" />
+				</xsl:attribute>
+				<article class="about-list">
+					<div class="container">
+						<h2 class="tb-title --black">
+							<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+						</h2>
+						<div class="row">
+							<div class="col-12">
+								<xsl:apply-templates select="News" mode="ZoneNews6"></xsl:apply-templates>
+							</div>
+						</div>
+					</div>
+				</article>
+
+			</section>
+		</xsl:if>
 	</xsl:template>
 	<!--End match content-->
 
@@ -321,6 +347,26 @@
 					<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
 				</xsl:attribute>
 			</img>
+		</figure>
+	</xsl:template>
+	<xsl:template match="News" mode="ZoneNews6">
+		<figure>
+			<img>
+				<xsl:attribute name="src">
+					<xsl:value-of select="ImageUrl"></xsl:value-of>
+				</xsl:attribute>
+				<xsl:attribute name="alt">
+					<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+				</xsl:attribute>
+				<xsl:attribute name="title">
+					<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+				</xsl:attribute>
+			</img>
+			<figcaption>
+				<h4>
+					<xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
+				</h4>
+			</figcaption>
 		</figure>
 	</xsl:template>
 
