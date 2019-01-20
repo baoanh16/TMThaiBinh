@@ -16,9 +16,9 @@
 								</h1>
 								<xsl:value-of select="/NewsDetail/BriefContent" disable-output-escaping="yes"></xsl:value-of>
 								<xsl:value-of select="/NewsDetail/FullContent" disable-output-escaping="yes"></xsl:value-of>
-								<quote>
+								<!-- <quote>
 									<p>Quốc Cường Land</p>
-								</quote>
+								</quote> -->
 								<div class="social-networks nav">
 									<div class="nav-item">
 										<div class="fb-share-button" data-href="" data-layout="button" data-size="small" data-mobile-iframe="true"><a

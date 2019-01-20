@@ -25,6 +25,9 @@
 			<xsl:attribute name="bg-img-responsive-xs">
 				<xsl:value-of select="ThumbnailUrl"></xsl:value-of>
 			</xsl:attribute>
+			<xsl:attribute name="bg-img-responsive-sm">
+				<xsl:value-of select="ImageUrl"></xsl:value-of>
+			</xsl:attribute>
 			<xsl:attribute name="bg-img-responsive">
 				<xsl:value-of select="ImageUrl"></xsl:value-of>
 			</xsl:attribute>

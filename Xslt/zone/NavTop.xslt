@@ -1,24 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt"
-    exclude-result-prefixes="msxsl">
+ exclude-result-prefixes="msxsl">
 	<xsl:output method="html" indent="yes" />
 	<xsl:output method="html" indent="yes" />
 
 	<xsl:template match="/">
-		<xsl:apply-templates select="/ZoneList/Zone" mode="Zone1"></xsl:apply-templates>
-	</xsl:template>
-
-
-	<xsl:template match="Zone" mode="Zone1">
-
 		<section class="canhcam-nav-3">
 			<div class="container">
 				<div class="row">
 					<div class="col item" bg-img="/Data/Sites/1/media/nav-bg.png">
 						<a class="trigger-btn" href="javascript:void(0)" title="title">Danh mục</a>
 						<nav>
-							<ul class="nav justify-content-center nav-pills" >
-								<xsl:apply-templates select="Zone" mode="ZoneLi"></xsl:apply-templates>
+							<ul class="nav justify-content-center nav-pills">
+								<xsl:apply-templates select="/ZoneList/Zone"></xsl:apply-templates>
 							</ul>
 						</nav>
 					</div>
@@ -26,11 +20,16 @@
 			</div>
 		</section>
 	</xsl:template>
+
+
+	<!-- <xsl:template match="Zone" mode="Zone1">
+
+	</xsl:template> -->
 	<!-- <xsl:template match="Zone" mode="Zone2">
 
 	</xsl:template> -->
 	<!--Begin Zone Child Gen <li>-->
-	<xsl:template match="Zone" mode="ZoneLi">
+	<xsl:template match="Zone">
 		<!--item-->
 		<li class="nav-item">
 

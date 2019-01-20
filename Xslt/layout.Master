@@ -91,6 +91,7 @@ script(src='//oss.maxcdn.com/respond/1.4.2/respond.min.js')
 				<nav class="navbar navbar-expand-md container">
 					<portal:ModuleWrapper ID="mdl135" runat="server" ConfigureModuleId="135" />
 					<portal:ModuleWrapper ID="mdl138" runat="server" ConfigureModuleId="138" />
+					<div id="phone"></div>
 					<div id="language"></div>
 					<button class="navbar-toggler" type="button" data-toggle="offcanvas" data-target="#CCMenuHeader" aria-controls="CCMenuHeader"
 					 aria-expanded="false" aria-label="Toggle navigation">
@@ -134,7 +135,6 @@ script(src='//oss.maxcdn.com/respond/1.4.2/respond.min.js')
 								<portal:ModuleWrapper ID="mdl137" runat="server" ConfigureModuleId="137" />
 							</div>
 						</div>
-						<div id="phone"></div>
 						<div id="ccinfo"></div>
 						<div id="des"></div>
 						<div id="globe"></div>
@@ -167,10 +167,10 @@ script(src='//oss.maxcdn.com/respond/1.4.2/respond.min.js')
 							<div class="col-md-4 address text-center text-md-left col-lg-2">
 								<portal:ModuleWrapper ID="mdl143" runat="server" ConfigureModuleId="143" />
 							</div>
-							<div class="col-6 col-md-4 col-lg-3 offset-lg-1">
+							<div class="col-6 col-md-4 col-lg-3 offset-lg-1 text-left">
 								<portal:ModuleWrapper ID="mdl200" runat="server" ConfigureModuleId="200" />
 							</div>
-							<div class="col-6 col-md-4 col-lg-3">
+							<div class="col-6 col-md-4 col-lg-3 text-left">
 								<portal:ModuleWrapper ID="mdl148" runat="server" ConfigureModuleId="148" />
 							</div>
 							<div class="col-md-12 col-lg-3 subscribe">

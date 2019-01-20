@@ -1,0 +1,8 @@
+.canhcam-system-1 .system-lists .tb-map #map{
+	height:100%;
+}.canhcam-system-1 .system-lists .tb-map #map_canvas{
+	height:100%;
+}
+.dealer-list #ajax_msg{
+	display:none;
+}
